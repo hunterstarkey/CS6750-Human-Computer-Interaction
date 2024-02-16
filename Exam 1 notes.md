@@ -108,226 +108,6 @@
 ---
 
 
-**2.1 Introduction to HCI Principles**
-
-**[GOAL #1] Students will understand the focus of HCI on tasks rather than merely tools.**
-
-
-
-*   To design a good interface, we need to understand both the user’s goals and the task they’re trying to accomplish
-
-**[GOAL #2] Students will understand the scope of a task.**
-
-
-
-*   How to identify a task
-    *   1. **Watch real users**.
-        *   Instead of speculating or brainstorming, get out there and watch real users performing in the area in which you’re interested.
-    *   2. **Talk to them**!
-        *   You don’t have to just watch them. Recruit some participants to come perform the task and talk their way through it. Find out what they’re thinking, what their goals are, what their motives are.
-    *   3. **Start small**.
-        *   Start by looking at the individual little interactions. It’s tempting to come in believing you already understand the task, but if you do, you’ll interpret everything you see in terms of what you already believe. Instead, start by looking at the smallest operators the user performs.
-    *   4. **Abstract up**.
-        *   Working from those smaller observations, then try to abstract up to an understanding of the task they’re trying to complete. Keep asking why they’re performing these actions until you get beyond the scope of your design. Somewhere in that sequence is likely the task for which we want to design.
-    *   5. **You are not your user**.
-        *   Even if you yourself perform the task for which you’re designing, you’re not designing for you: you’re designing for everyone that performs the task. Leave behind your own previous experiences and preconceived notions about it. 
-
-**[GOAL #3] Students will understand the notions of usefulness and usability.**
-
-
-
-*   The ultimate goal of design in HCI is to create interfaces that are both useful and usable.
-*   Example: maps vs GPS
-    *   **Useful**: the interface allows the user to achieve some task [maps are useful, but you still have to track your current location, where you’re going, etc]
-    *   **Usable**: a solution that makes the experience easier for the user [GPS device tracks your car, tells you your speed and location relative to the destination, helps you plan ahead of time to avoid traffic, etc]
-    *   **Cognitive load**: the total mental effort being used in working memory
-    *   By understanding the task of navigation itself, we realized we could offload the cognitive load of navigation onto an interface, closing the loop between the user and the task of navigation.
-
-**[GOAL #4] Students will understand the different views of a person’s role in a system.**
-
-
-
-*   **Role of a processor**
-    *   Think of the human being as nothing more than a sensory processor.
-    *   They take input in, and they spit output out
-    *   _Usability_: here, it means that the interface is physically usable [touch/see/etc]
-    *   _Evaluated by measuring user interaction quantitatively_ (eg: How long does it take them to execute a task? How quickly can they react?)
-    *   Goes back to the behaviorist school of thought in psychology
-        *   Behaviorism focuses on observable behaviors and outcomes. It attempts to understand behavior by looking only at behavior, not at the cognition that underlies behavior
-    *   For processors, our design process focuses on testing observable behaviors
-    *   “As a processor, we might look at what information is communicated to the user, when, and how.”
-*   **Role of a predictor**
-    *   When we care deeply about the human’s knowledge, experience, expectations, and thought process
-    *   They’re the predictor: we want them to be able to predict what the outcome will be for some input, and thus choose the input that will cause the desired output. We want to understand what is going on in their head as they perform some task, and create interfaces to make that task easier.
-    *   _Interface must fit with knowledge_: the interface must help the user learn what they do not already know, as well as efficiently leverage what they do already know
-    *   _Evaluated by qualitative ex situ studies _(studies in a controlled or otherwise inauthentic environment): perform task analyses to see where users are spending most of their time, or perform cognitive walkthroughs to understand the user’s thought process throughout the task
-    *   Goes back to cognitivism or cognitive psychology
-        *   Where behaviorism was only concerned with what we could observe, cognitivism is concerned with what goes on inside the mind (perception, attention, memory, creativity, etc)
-        *   We care about what the user is thinking
-        *   The user, not the interface, is doing the predicting
-    *   “As a predictor, we might instead look at how the interface meshes with the user’s needs with regards to this task, how easy it is to access, how easy the commands are to perform, and so on.”
-*   **Role of a participant**
-    *   We’re not just interested in what’s going on inside the user’s head; we’re also interested in what’s going on around them at the time
-    *   Example questions: what is competing for their attention? What are their available cognitive resources? What is the importance of the task relative to everything else going on?
-    *   _Interface must fit with the context_: the interface cannot just accomplish a task when analyzed in a vacuum; it must meet the needs of the context in which it is used
-    *   _Evaluated by in situ studies_: studies of the interface and the user within the real, complete context of the task
-    *   Resembles the functionalism school of thought in psychology
-        *   Emphasizes examining mental behaviors in the context of broader environments
-    *   Also resembles systems psychology
-        *   Emphasizes human behavior within complex systems
-    *   While the processor and predictor views emphasize only the interaction of the user with an interface, the participant view looks at the interaction of both within the broader context of an environment in which they are situated.
-        *   Any time you’re looking beyond just the user and the interface, you’re likely adopting the participant view in some way
-    *   “As a participant, we might look at the broader interactions between this interface and the user’s other tasks and social activities, and how it changes their lives in other ways.”
-*   **EXAMPLE**: Redesigning the Tesla Model S’s address entry screen so the user can enter their destination address more quickly
-    *   **PROCESSOR**
-        *   We’re strictly looking at the user’s observable behavior. So, we might construct a controlled study where we bring participants in, give them addresses to enter, and time them on different versions of our interface.
-        *   Whichever interface has the fastest times would be the interface we might want to go with
-        *   **Pros**
-            *   Can do the research with data, rather than talking to the users
-            *   Compare text interface vs voice interface
-        *   **Cons**
-            *   There could be other enhancements we could that we don’t know about
-            *   Targets experts who already know what to do
-            *   Helps optimize, not redesign
-    *   **PREDICTOR**
-        *   Gather more robust data: actually start asking our users for input. We could bring them in for interviews, conduct focus groups, or send out surveys. We could also show them prototypes for new interfaces and have them describe their thought process while trying to interact with them
-        *   **Pros**
-            *   More complete picture of interaction than processor model
-            *   Lets us target beginners and experts
-        *   **Cons**
-            *   Relies on users being accurate reporters of their own experiences
-            *   We’re not looking at the context in which the interface is used - excludes situational factors
-            *   Suffers from a lack of awareness of context
-    *   **PARTICIPANT**
-        *   View the interface in the actual context in which it is used
-        *   **Pros**
-            *   Get even more complete data on the strengths and weaknesses of the interface
-        *   **Cons**
-            *   Usually only usable with real working interfaces
-            *   Becomes more difficult to isolate the effect of our changes
-*   We’ll likely use all these models at different times and in different contexts, and the data we gather from one will inform interface changes that might be tested in another
-*   The results of each design phase inform the next, and different phases call for different types of evaluation, which echo different models of the user.
-* ![screenshot](/images_Exam1/image5.png)
-
-
-
-**[GOAL #5] Students will understand the existence of user experience at the group and societal level.**
-
-
-
-*   At the group level, we can start to think about how interfaces lead to a different user experience among social or work groups.
-*   Societal changes/progress can affect features in UX and technology (example: Facebook adding ‘civil union’ when gay marriages become legalized helped normalize the societal change for the individual and bring more representation to minority groups)
-
-
-
----
-
-
-**2.2 Feedback Cycles**
-
-**[GOAL #1] Students will understand the overall nature of feedback in interaction design, including the feedback cycle between user and interface.**
-
-
-
-*   Feedback cycles are the way in which people interact with the world and then get feedback on the results of those interactions.
-*   Nearly all of HCI can be interpreted in some ways as an application of feedback cycles, whether between a person and a task, a person and an interface, or systems comprised of people and interfaces.
-
-**[GOAL #2] Students will understand the definition of gulfs of execution.**
-
-
-
-*   The distance between a user’s goals and the actions required to realize those goals
-*   The user puts some input into the system through the interface, and the system communicates some output back to the user via the interface.
-*   The gulf of execution can be defined as: how do I know what I can do?
-    *   The user has some goals: how do they figure out what to do to make those goals a reality? How hard is it to do in the interface what is necessary to accomplish those goals? 
-    *   Or, alternatively: what’s the difference between what the user thinks they should have to do, and what they actually have to do?
-*   **Components**
-    *   (#1) **Identify intentions**
-        *   The user needs to be able to identify what their goal is in the context of the system
-        *   There might be a mismatch between their own understanding and the system’s structure
-        *   The user needs to think of their goal in terms of their current system
-    *   (#2) **Identify actions**
-        *   They need to be able to identify the actions necessary to accomplish their goals
-    *   (#3) **Execute in interface**
-        *   They need to be able to interface with the system to carry out the actions
-*   Can narrow the gulf of execution by reducing the number of actions required
-*   **Bridging gulfs of execution**
-    *   Best bridge over the gulf of execution might involve helping the user reframe their intention
-    *   (#1) **Make functions discoverable**
-        *   Ideally, the functions of the interface would be discoverable, meaning that they can find them, clearly labeled, within the interface
-    *   (#2) **Let the user mess around**
-        *   Don’t include any actions that can’t be undone. Avoid any buttons that can irreversibly ruin their document or setup. That way, the user will feel safe discovering things in your interface
-    *   (#3) **Be consistent with other tools**
-        *   Adopt the same standards many other tools use: this makes it easy for users to figure out what to do in your interface
-        *   Example: use the same save icon (floppy disk) that users are used to from other programs/OSs
-    *   (#4) **Know your user**
-        *   For novice users, identifying their intentions and actions are most valuable, so making commands discoverable is preferable
-        *   For experts, though, actually doing the action is more valuable
-        *   Example: using the command line vs using the OS GUI
-    *   (#5) **Feedforward**
-        *   Information on what will happen if you keep doing what you’re doing
-        *   Feedback on what the user might want to do. It helps the user predict what the result of an action will be
-        *   Example: if you pull down on the Facebook newsfeed on your phone, it starts to show the refresh icon -- if you don’t finish pulling down, it doesn’t refresh
-
-**[GOAL #3] Students will understand the definition of gulfs of evaluation.**
-
-
-
-*   The distance between the effects of those actions and the user’s understanding of the results
-*   The user has taken some action. Now, they need to evaluate whether or not their action led to the desired goals. This isn’t about whether the action did succeed (it’s actually inside the system), but _how the user becomes aware that their action succeeded_.
-*   **Components**
-    *   (#1) **Interface output**
-        *   What’s displayed or communicated - visual, sound, vibration
-    *   (#2) **Interpretation**
-        *   The user needs to interpret the output to find out what it means for the system
-    *   (#3) **Evaluation**
-        *   Once they have received and interpreted the output, they can evaluate whether the desired change occurred
-*   Large gulf of evaluation: user has to do a lot to evaluate whether their actions were successful
-*   **Bridging gulfs of evaluation**
-    *   Best bridge over the gulf of evaluation might involve some feedback on the performance of a task
-    *   (#1) **Give feedback constantly**
-        *   Help the user understand where the system is in executing their action by giving feedback at every step of the process
-    *   (#2) **Give feedback immediately**
-        *   Let the user know they have been heard even when you’re not ready to give them a full response
-    *   (#3) **Match the feedback to the action**
-        *   Subtle actions should have subtle feedback, significant actions should have significant feedback
-    *   (#4) **Vary your feedback**
-        *   Think about how auditory or haptic (touch) feedback can be used instead of relying just on visual feedback
-    *   (#5) **Leverage direct manipulation**
-        *   Whenever possible, let the user feel like they’re directly manipulating things in the system
-
-**Related to both gulfs:**
-* ![screenshot](/images_Exam1/image6.png)
-
-
-
-*   **Seven questions to ask when designing interfaces (by Norman):**
-    *   **[Execution: the goal]** 1. How easily can one determine the function of the device? This relates to the user’s goal: how easily can the user determine that the interface is capable of accomplishing their goal?
-        *   What do I want to do?
-    *   **[Execution: plan]** 2. How easily can one tell what actions are possible? This is important for the user to be able to construct their plan.
-        *   What are the alternatives?
-    *   **[Execution: specify] **3. How easily can one determine the mapping from intention to physical movement? 
-        *   What can I do?
-    *   **[Execution: perform]** 4. How easily can one actually perform that physical movement?
-        *   How can I do it?
-    *   **[Evaluation: perceive] **5. How easily can one tell what state the system is in?
-        *   What happened?
-    *   **[Evaluation: interpret]** 6. How easily can one tell if the system is in the desired state?
-        *   What does it mean?
-    *   **[Evaluation: compare]** 7. How easily can one determine the mapping from system state to interpretation?
-        *   Is this okay for me?
-*   **PHASES**
-    *   **Visceral**: physical act of performing the plan, or the perceiving the outcome
-        *   _[perform/perceive]_
-    *   **Behavioral**: where we think about what steps to actually take or what we’re seeing from the interface
-        *   _[specify/interpret]_
-    *   **Reflective**: put it in the context of our goal: either translating a goal into a plan, or comparing the interpreted results to the original goal
-        *   _[plan/compare]_
-
-
-
----
-
 
 **3.1 Introduction to Methods**
 
@@ -690,6 +470,356 @@
 ---
 
 
+
+
+**2.1 Introduction to HCI Principles**
+
+**[GOAL #1] Students will understand the focus of HCI on tasks rather than merely tools.**
+
+
+
+*   To design a good interface, we need to understand both the user’s goals and the task they’re trying to accomplish
+
+**[GOAL #2] Students will understand the scope of a task.**
+
+
+
+*   How to identify a task
+    *   1. **Watch real users**.
+        *   Instead of speculating or brainstorming, get out there and watch real users performing in the area in which you’re interested.
+    *   2. **Talk to them**!
+        *   You don’t have to just watch them. Recruit some participants to come perform the task and talk their way through it. Find out what they’re thinking, what their goals are, what their motives are.
+    *   3. **Start small**.
+        *   Start by looking at the individual little interactions. It’s tempting to come in believing you already understand the task, but if you do, you’ll interpret everything you see in terms of what you already believe. Instead, start by looking at the smallest operators the user performs.
+    *   4. **Abstract up**.
+        *   Working from those smaller observations, then try to abstract up to an understanding of the task they’re trying to complete. Keep asking why they’re performing these actions until you get beyond the scope of your design. Somewhere in that sequence is likely the task for which we want to design.
+    *   5. **You are not your user**.
+        *   Even if you yourself perform the task for which you’re designing, you’re not designing for you: you’re designing for everyone that performs the task. Leave behind your own previous experiences and preconceived notions about it. 
+
+**[GOAL #3] Students will understand the notions of usefulness and usability.**
+
+
+
+*   The ultimate goal of design in HCI is to create interfaces that are both useful and usable.
+*   Example: maps vs GPS
+    *   **Useful**: the interface allows the user to achieve some task [maps are useful, but you still have to track your current location, where you’re going, etc]
+    *   **Usable**: a solution that makes the experience easier for the user [GPS device tracks your car, tells you your speed and location relative to the destination, helps you plan ahead of time to avoid traffic, etc]
+    *   **Cognitive load**: the total mental effort being used in working memory
+    *   By understanding the task of navigation itself, we realized we could offload the cognitive load of navigation onto an interface, closing the loop between the user and the task of navigation.
+
+**[GOAL #4] Students will understand the different views of a person’s role in a system.**
+
+
+
+*   **Role of a processor**
+    *   Think of the human being as nothing more than a sensory processor.
+    *   They take input in, and they spit output out
+    *   _Usability_: here, it means that the interface is physically usable [touch/see/etc]
+    *   _Evaluated by measuring user interaction quantitatively_ (eg: How long does it take them to execute a task? How quickly can they react?)
+    *   Goes back to the behaviorist school of thought in psychology
+        *   Behaviorism focuses on observable behaviors and outcomes. It attempts to understand behavior by looking only at behavior, not at the cognition that underlies behavior
+    *   For processors, our design process focuses on testing observable behaviors
+    *   “As a processor, we might look at what information is communicated to the user, when, and how.”
+*   **Role of a predictor**
+    *   When we care deeply about the human’s knowledge, experience, expectations, and thought process
+    *   They’re the predictor: we want them to be able to predict what the outcome will be for some input, and thus choose the input that will cause the desired output. We want to understand what is going on in their head as they perform some task, and create interfaces to make that task easier.
+    *   _Interface must fit with knowledge_: the interface must help the user learn what they do not already know, as well as efficiently leverage what they do already know
+    *   _Evaluated by qualitative ex situ studies _(studies in a controlled or otherwise inauthentic environment): perform task analyses to see where users are spending most of their time, or perform cognitive walkthroughs to understand the user’s thought process throughout the task
+    *   Goes back to cognitivism or cognitive psychology
+        *   Where behaviorism was only concerned with what we could observe, cognitivism is concerned with what goes on inside the mind (perception, attention, memory, creativity, etc)
+        *   We care about what the user is thinking
+        *   The user, not the interface, is doing the predicting
+    *   “As a predictor, we might instead look at how the interface meshes with the user’s needs with regards to this task, how easy it is to access, how easy the commands are to perform, and so on.”
+*   **Role of a participant**
+    *   We’re not just interested in what’s going on inside the user’s head; we’re also interested in what’s going on around them at the time
+    *   Example questions: what is competing for their attention? What are their available cognitive resources? What is the importance of the task relative to everything else going on?
+    *   _Interface must fit with the context_: the interface cannot just accomplish a task when analyzed in a vacuum; it must meet the needs of the context in which it is used
+    *   _Evaluated by in situ studies_: studies of the interface and the user within the real, complete context of the task
+    *   Resembles the functionalism school of thought in psychology
+        *   Emphasizes examining mental behaviors in the context of broader environments
+    *   Also resembles systems psychology
+        *   Emphasizes human behavior within complex systems
+    *   While the processor and predictor views emphasize only the interaction of the user with an interface, the participant view looks at the interaction of both within the broader context of an environment in which they are situated.
+        *   Any time you’re looking beyond just the user and the interface, you’re likely adopting the participant view in some way
+    *   “As a participant, we might look at the broader interactions between this interface and the user’s other tasks and social activities, and how it changes their lives in other ways.”
+*   **EXAMPLE**: Redesigning the Tesla Model S’s address entry screen so the user can enter their destination address more quickly
+    *   **PROCESSOR**
+        *   We’re strictly looking at the user’s observable behavior. So, we might construct a controlled study where we bring participants in, give them addresses to enter, and time them on different versions of our interface.
+        *   Whichever interface has the fastest times would be the interface we might want to go with
+        *   **Pros**
+            *   Can do the research with data, rather than talking to the users
+            *   Compare text interface vs voice interface
+        *   **Cons**
+            *   There could be other enhancements we could that we don’t know about
+            *   Targets experts who already know what to do
+            *   Helps optimize, not redesign
+    *   **PREDICTOR**
+        *   Gather more robust data: actually start asking our users for input. We could bring them in for interviews, conduct focus groups, or send out surveys. We could also show them prototypes for new interfaces and have them describe their thought process while trying to interact with them
+        *   **Pros**
+            *   More complete picture of interaction than processor model
+            *   Lets us target beginners and experts
+        *   **Cons**
+            *   Relies on users being accurate reporters of their own experiences
+            *   We’re not looking at the context in which the interface is used - excludes situational factors
+            *   Suffers from a lack of awareness of context
+    *   **PARTICIPANT**
+        *   View the interface in the actual context in which it is used
+        *   **Pros**
+            *   Get even more complete data on the strengths and weaknesses of the interface
+        *   **Cons**
+            *   Usually only usable with real working interfaces
+            *   Becomes more difficult to isolate the effect of our changes
+*   We’ll likely use all these models at different times and in different contexts, and the data we gather from one will inform interface changes that might be tested in another
+*   The results of each design phase inform the next, and different phases call for different types of evaluation, which echo different models of the user.
+* ![screenshot](/images_Exam1/image5.png)
+
+
+
+**[GOAL #5] Students will understand the existence of user experience at the group and societal level.**
+
+
+
+*   At the group level, we can start to think about how interfaces lead to a different user experience among social or work groups.
+*   Societal changes/progress can affect features in UX and technology (example: Facebook adding ‘civil union’ when gay marriages become legalized helped normalize the societal change for the individual and bring more representation to minority groups)
+
+
+
+---
+
+
+**2.2 Feedback Cycles**
+
+**[GOAL #1] Students will understand the overall nature of feedback in interaction design, including the feedback cycle between user and interface.**
+
+
+
+*   Feedback cycles are the way in which people interact with the world and then get feedback on the results of those interactions.
+*   Nearly all of HCI can be interpreted in some ways as an application of feedback cycles, whether between a person and a task, a person and an interface, or systems comprised of people and interfaces.
+
+**[GOAL #2] Students will understand the definition of gulfs of execution.**
+
+
+
+*   The distance between a user’s goals and the actions required to realize those goals
+*   The user puts some input into the system through the interface, and the system communicates some output back to the user via the interface.
+*   The gulf of execution can be defined as: how do I know what I can do?
+    *   The user has some goals: how do they figure out what to do to make those goals a reality? How hard is it to do in the interface what is necessary to accomplish those goals? 
+    *   Or, alternatively: what’s the difference between what the user thinks they should have to do, and what they actually have to do?
+*   **Components**
+    *   (#1) **Identify intentions**
+        *   The user needs to be able to identify what their goal is in the context of the system
+        *   There might be a mismatch between their own understanding and the system’s structure
+        *   The user needs to think of their goal in terms of their current system
+    *   (#2) **Identify actions**
+        *   They need to be able to identify the actions necessary to accomplish their goals
+    *   (#3) **Execute in interface**
+        *   They need to be able to interface with the system to carry out the actions
+*   Can narrow the gulf of execution by reducing the number of actions required
+*   **Bridging gulfs of execution**
+    *   Best bridge over the gulf of execution might involve helping the user reframe their intention
+    *   (#1) **Make functions discoverable**
+        *   Ideally, the functions of the interface would be discoverable, meaning that they can find them, clearly labeled, within the interface
+    *   (#2) **Let the user mess around**
+        *   Don’t include any actions that can’t be undone. Avoid any buttons that can irreversibly ruin their document or setup. That way, the user will feel safe discovering things in your interface
+    *   (#3) **Be consistent with other tools**
+        *   Adopt the same standards many other tools use: this makes it easy for users to figure out what to do in your interface
+        *   Example: use the same save icon (floppy disk) that users are used to from other programs/OSs
+    *   (#4) **Know your user**
+        *   For novice users, identifying their intentions and actions are most valuable, so making commands discoverable is preferable
+        *   For experts, though, actually doing the action is more valuable
+        *   Example: using the command line vs using the OS GUI
+    *   (#5) **Feedforward**
+        *   Information on what will happen if you keep doing what you’re doing
+        *   Feedback on what the user might want to do. It helps the user predict what the result of an action will be
+        *   Example: if you pull down on the Facebook newsfeed on your phone, it starts to show the refresh icon -- if you don’t finish pulling down, it doesn’t refresh
+
+**[GOAL #3] Students will understand the definition of gulfs of evaluation.**
+
+
+
+*   The distance between the effects of those actions and the user’s understanding of the results
+*   The user has taken some action. Now, they need to evaluate whether or not their action led to the desired goals. This isn’t about whether the action did succeed (it’s actually inside the system), but _how the user becomes aware that their action succeeded_.
+*   **Components**
+    *   (#1) **Interface output**
+        *   What’s displayed or communicated - visual, sound, vibration
+    *   (#2) **Interpretation**
+        *   The user needs to interpret the output to find out what it means for the system
+    *   (#3) **Evaluation**
+        *   Once they have received and interpreted the output, they can evaluate whether the desired change occurred
+*   Large gulf of evaluation: user has to do a lot to evaluate whether their actions were successful
+*   **Bridging gulfs of evaluation**
+    *   Best bridge over the gulf of evaluation might involve some feedback on the performance of a task
+    *   (#1) **Give feedback constantly**
+        *   Help the user understand where the system is in executing their action by giving feedback at every step of the process
+    *   (#2) **Give feedback immediately**
+        *   Let the user know they have been heard even when you’re not ready to give them a full response
+    *   (#3) **Match the feedback to the action**
+        *   Subtle actions should have subtle feedback, significant actions should have significant feedback
+    *   (#4) **Vary your feedback**
+        *   Think about how auditory or haptic (touch) feedback can be used instead of relying just on visual feedback
+    *   (#5) **Leverage direct manipulation**
+        *   Whenever possible, let the user feel like they’re directly manipulating things in the system
+
+**Related to both gulfs:**
+* ![screenshot](/images_Exam1/image6.png)
+
+
+
+*   **Seven questions to ask when designing interfaces (by Norman):**
+    *   **[Execution: the goal]** 1. How easily can one determine the function of the device? This relates to the user’s goal: how easily can the user determine that the interface is capable of accomplishing their goal?
+        *   What do I want to do?
+    *   **[Execution: plan]** 2. How easily can one tell what actions are possible? This is important for the user to be able to construct their plan.
+        *   What are the alternatives?
+    *   **[Execution: specify] **3. How easily can one determine the mapping from intention to physical movement? 
+        *   What can I do?
+    *   **[Execution: perform]** 4. How easily can one actually perform that physical movement?
+        *   How can I do it?
+    *   **[Evaluation: perceive] **5. How easily can one tell what state the system is in?
+        *   What happened?
+    *   **[Evaluation: interpret]** 6. How easily can one tell if the system is in the desired state?
+        *   What does it mean?
+    *   **[Evaluation: compare]** 7. How easily can one determine the mapping from system state to interpretation?
+        *   Is this okay for me?
+*   **PHASES**
+    *   **Visceral**: physical act of performing the plan, or the perceiving the outcome
+        *   _[perform/perceive]_
+    *   **Behavioral**: where we think about what steps to actually take or what we’re seeing from the interface
+        *   _[specify/interpret]_
+    *   **Reflective**: put it in the context of our goal: either translating a goal into a plan, or comparing the interpreted results to the original goal
+        *   _[plan/compare]_
+
+
+
+---
+
+
+**3.4 Design Alternatives**
+
+**[GOAL #1] Students will understand the value of brainstorming multiple design alternatives.**
+
+
+
+*   The biggest mistake a designer can make is jumping to designing an interface without understanding the users or the task. The second biggest mistake, however, is settling on a single design idea or genre too early.
+    *   Staying too allegiant to existing designers or products: if you’re working on improving an existing interface, try to distance yourself from the past solutions, at least initially during brainstorming.
+        *   The reason why this is such a common mistake is that there’s a natural tendency to think it’s a waste of time to develop interfaces you’re not going to use. You think you can get the work done faster by picking one early and sticking to it.
+        *   But fleshing out ideas for an interface you don’t end up using is not a waste of time because by doing so, you continue to learn more about the problem.
+    *   The experience of exploring those ideas that you leave behind will make you a better designer for the ideas you pursue. In all likelihood, your ultimate design will be some combination of the design alternatives you explored.
+        *   Different alternatives won’t always integrate side by side easily, but the design process as a whole is an iterative process of brainstorming, combining, abandoning, revising, and improving your ideas: **that requires starting with several ideas in the first place**.
+*   **Design space**: the area in which we design our interfaces
+    *   Our goal during the design alternative phase is to explore the possible design space.
+    *   **Current design space**: current devices available to do the task/goal
+
+**[GOAL #2] Students will understand the strengths and weaknesses of individual and group brainstorming.**
+
+
+
+*   **Individual brainstorming**
+    *   When you first start brainstorming, your goal is to generate a lot of ideas: they can be very short, very high-level, and very general.
+    *   _Research generally indicates that it’s better to start with individual brainstorming_.
+    *   Think about how you’d design with different types of **interactions**, like gestures, voice, or touch.
+    *   Think about how you’d design for different **interfaces**, like smartwatches, tablets, augmented reality.
+    *   Think about how you’d design for different **audiences**, novices and experts, kids and adults.
+    *   It’s important to generate a lot of ideas: you never know what will come up throughout the rest of the design process. Don’t cross out any ideas, throw away any papers, or start narrowing any ideas down!
+    *   **Tips for effective individual brainstorming:**
+        *   **1. Write down the core problem**. Keep this visible. You want to let your mind enter a divergent thinking mode, but you also want to remain grounded in the problem. Writing down the problem and keeping it available will help you remain focused while remaining creative.
+        *   **2. Constrain yourself**. Decide that you want at least one idea in a number of different categories. Personally, I try to make sure to have at least three ideas that use non-traditional interaction methods, like touch and voice. You can constrain yourself in strange ways, too: force yourself to think of solutions that are too expensive or not physically possible. The act of thinking in these directions will help you out later.
+        *   **3. Aim for 20**. Don’t stop until you have 20 ideas. These ideas don’t have to be very well-formed or complex, they can be simple one-sentence descriptions of designs you might pursue. This forces you to think through the problem rather than getting tunnel vision on an early idea.
+        *   **4. Take a break**. You don’t need to come up with all of these at once. In fact, you’ll probably find it’s easier if you leave and come back. I’m not talking just 10-minute breaks, either. Stop brainstorming and decide to continue a couple days later, but be ready to write down new ideas that come to you.
+        *   **5. Divide and conquer**. If you’re dealing with a big problem like helping kids live more healthy lifestyles, divide it into smaller problems and brainstorm solutions for those. If we’re designing audiobooks for exercisers, we might divide things into smaller tasks like the ability to take and review notes or the ability to control playback hands-free.
+*   **Group brainstorming**
+    *   Should be done after individual brainstorming because groups tend to coalesce around ideas
+    *   **Presents some significant issues**
+        *   **Social Loafing**: The tendency to exert less effort working in groups than working alone.
+            *   People often don’t work as hard in groups. It’s easy to feel like the responsibility for unproductive brainstorming is shared and deflected. In individual brainstorming, it’s clearly on the individual.
+        *   **Conformity**: The tendency to agree with or follow the group’s reasoning and ideas.
+            *   People in groups tend to want to agree. Studies have shown that group brainstorming leads to convergent thinking. The conversation the group has tends to force the participants down the same line of thinking, generating fewer and less varied ideas than the individuals acting alone. During brainstorming, though, the goal is divergent thinking: lots of ideas, of creativity.
+        *   **Production blocking**: The tendency of some individuals in discussions to block other individuals’ participation.
+            *   In group brainstorming, there are often individuals who dominate the conversation and make it difficult for others to actually be heard. Their ideas can thus command more weight not because of the strength of the ideas, but because of the volume of the description. 
+        *   **Performance matching**: The tendency to match one’s level of performance to other collaborators’.
+            *   People tend to converge in terms of passion and performance, which can lead to a loss of momentum over time. That might be able to get people excited if they’re around other excited people, but more often it saps the energy of those that enter with enthusiasm.
+        *   **Power dynamics**: The tendency to defer to more senior individuals, or to overpower less senior individuals.
+            *   No matter how supportive and collaborative a boss might be, there likely always exists a tacit pressure to agree with her suggestions, which dampens creative brainstorming.
+            *   There also exists considerable literature stating that other biases based on gender, age, or race can play into these group sessions as well.
+    *   **DO NOT AVOID GROUP BRAINSTORMING ALTOGETHER.**
+        *   Instead, enter into group brainstorming with strong ideas of how to address these issues, ideally after a phase of individual brainstorming has occurred
+    *   **Rules for group brainstorming**
+        *   Rules by Osborn:
+        *   1. **Expressiveness**. Any idea that comes to mind, share it out loud, no matter how strange.
+        *   2. **Non-evaluation**. No criticizing ideas. No evaluating ideas yet.
+        *   3. **Quantity**. Brainstorm as many as possible. The more you have, the greater your chance of finding a novel one.
+        *   4. **Building**. While you shouldn’t criticize others’ ideas, you should absolutely try to build on them.
+        *   Four more rules added by Oxley, Dzindolet, and Paulus in 1996 to help individuals understand how to act in group brainstorming:
+        *   5. **Stay focused**. Keep the goal in mind at all times.
+        *   6. **No explaining ideas**. Say the idea and move on. No justifying ideas.
+        *   7. **When you hit a roadblock**, revisit the problem. Say it again outloud.
+        *   8. **Encourage others**. If someone isn’t speaking up, encourage them to do so.
+        *   **Note**: all eight of these rules prescribe what individuals should do, but they’re only effective if every individual does them. So, it’s good to cover these rules, post them publicly, and call one another on breaking from them
+    *   **More tips - apply less to the individual participants and more to the design of the activity as a whole**
+        *   1. **Go through every individual idea**. Have participants perform individual brainstorming ahead of time and bring ideas to the group brainstorming session, and explicitly make sure to go through each one. That will help avoid converging around an idea too early.
+        *   2. **Find the optimal size**. Social loafing occurs when there’s a lack of individual responsibility. When you have so many people that not everyone would get to talk anyway, it’s easy for disengagement to occur. I’d say a group brainstorming session should generally not involve more than five people. If more people need to give perspectives than that, then you can have intermediate groups that then send ideas along to a later group.
+        *   3. **Set clear rules for communication**. Get a 20 second hour glass or timer, and when someone starts talking, start it -- once the timer is up, someone else gets to speak. The goal is to ensure no one can block others’ ideas, whether intentionally or accidentally.
+        *   4.** Set clear expectations**. Enthusiasm starts to wane when people are unsure how long a session will go or what will mark its end. You might set the session to go a certain amount of time, or dictate a certain number of ideas get generated: no matter how you do it, make sure people can assess where in the brainstorming session they are.
+        *   5. **End with ideas, not decisions**. It’s tempting to want to leave a brainstorming session with a single idea on which to move forward. That’s not the goal, though. Your brainstorming session should end with several ideas. Then, let them ruminate in everyone’s minds before coming back and choosing the ideas to pursue later.
+
+**[GOAL #3] Students will understand methods for brainstorming design alternatives.**
+
+
+
+*   Rule out the ideas that are technologically unfeasible and unrealistic for more practical reasons
+*   Create some timelines covering the sequence of events in the task
+*   Use user personas to explore the cognitive load of the users
+*   **Design alternatives**: explore different ways to facilitate the user’s task.
+    *   You might need to make sure to create personas for different stakeholders.
+    *   Create personas for all types of users, and make sure to explore scenarios that affect the different stakeholders.
+
+**[GOAL #4] Students will understand rapid ways of exploring design alternatives from the perspectives of personas, timelines, and scenarios.**
+
+
+
+*   **Personas**: create actual characters surrounding our users
+    *   Give them a name, face, any details relevant to our design: why/when/how/what/who/where questions
+    *   We want to create at least three or four of these personas, and perhaps more depending on how many different stakeholders we have for our problem.
+    *   The important thing is that these should be pretty different people, representing different components of the personas.
+    *   Using these personas, we revisit our design alternatives
+*   **User profiles**
+    *   Personas are meant to give us a small number of characters we can reason about empathetically. However, it can sometimes also be useful to formulaically generate a larger number of user profiles to explore the full design space.
+    *   We can do this by defining a number of different variables about our user, and the possibilities within each.
+    *   Example:
+        *   We care about novice and expert users.
+        *   We care about serious and casual users.
+        *   We care about high and low motivation users.
+        *   We care about tech literate and tech illiterate individuals.
+        *   We care about users that use the interface rarely and often.
+        *   For each of these sets, there are design implications. In deciding what to design, we need to understand what groups, what profiles we’re designing for, and use that to inform our design decisions.
+*   **Timelines**
+    *   Can also be called journey maps, although journey maps usually cover much longer periods of time.
+    *   The goal is to take a persona and stretch it out over the timeline of the task in which we’re interested.
+    *   _What prompts this persona to start engaging in the task?_
+    *   _What actions lead up to starting the task?_
+    *   _How are they feeling at every stage of the task?_
+    *   _How would each design alternative impact their experience throughout this process?_
+    *   Exploring the different alternatives in this way allows us to start to gauge which designs might have the greatest potential to positively impact the user’s experience.
+*   **Scenarios and storyboards**
+    *   Rather than outlining the whole course of the interaction, **scenarios** let us discuss the specific kinds of interactions and events we want to handle.
+    *   **Storyboard**: sequences of diagrams or drawings that outline what happens with a particular user in a particular scenario
+    *   It’s not critical that we explore every combination of persona, scenario, and design alternative: this is more of a fluid process of exploring what ideas have potential and are worth exploring further.
+    *   We might find there are certain combinations of scenarios and personas that we really care about that completely rule out some design alternatives
+*   **User modeling**
+    *   Explore design alternatives through task analysis, including cognitive task analysis and GOMS (Goals, Operators, Methods, and Selection) model, as part of our needfinding
+        *   Start to look at how exactly the goals, operators, and methods of a GOMS model map up to the ideas of our design alternatives
+        *   _How does the user achieve each of their goals in each interface? How relatively easy are they between different design alternatives?_
+        *   With the results of our cognitive task analyses, we can start to ask some deeper questions about what the user is keeping in mind as well.
+        *   _Given what we know about the things competing for our users’ attention, what are the likelihoods that each interface will work?_
+    *   In some ways, this is a similar process to using the personas we outlined earlier, but with a subtle difference.
+        *   Personas are personal and meant to give us an empathetic view of the user experience.
+        *   User models are more objective and meant to give us a measurable and comparable view of the user experience.
+        *   ![screenshot](/images_Exam1/image2.png)
+
+---
+
+
+
+
 **2.3 Direct Manipulation and Invisible Interfaces**
 
 **[GOAL #1] Students will understand the power of direct manipulation in designing interfaces.**
@@ -847,130 +977,6 @@
 
 ---
 
-
-**3.4 Design Alternatives**
-
-**[GOAL #1] Students will understand the value of brainstorming multiple design alternatives.**
-
-
-
-*   The biggest mistake a designer can make is jumping to designing an interface without understanding the users or the task. The second biggest mistake, however, is settling on a single design idea or genre too early.
-    *   Staying too allegiant to existing designers or products: if you’re working on improving an existing interface, try to distance yourself from the past solutions, at least initially during brainstorming.
-        *   The reason why this is such a common mistake is that there’s a natural tendency to think it’s a waste of time to develop interfaces you’re not going to use. You think you can get the work done faster by picking one early and sticking to it.
-        *   But fleshing out ideas for an interface you don’t end up using is not a waste of time because by doing so, you continue to learn more about the problem.
-    *   The experience of exploring those ideas that you leave behind will make you a better designer for the ideas you pursue. In all likelihood, your ultimate design will be some combination of the design alternatives you explored.
-        *   Different alternatives won’t always integrate side by side easily, but the design process as a whole is an iterative process of brainstorming, combining, abandoning, revising, and improving your ideas: **that requires starting with several ideas in the first place**.
-*   **Design space**: the area in which we design our interfaces
-    *   Our goal during the design alternative phase is to explore the possible design space.
-    *   **Current design space**: current devices available to do the task/goal
-
-**[GOAL #2] Students will understand the strengths and weaknesses of individual and group brainstorming.**
-
-
-
-*   **Individual brainstorming**
-    *   When you first start brainstorming, your goal is to generate a lot of ideas: they can be very short, very high-level, and very general.
-    *   _Research generally indicates that it’s better to start with individual brainstorming_.
-    *   Think about how you’d design with different types of **interactions**, like gestures, voice, or touch.
-    *   Think about how you’d design for different **interfaces**, like smartwatches, tablets, augmented reality.
-    *   Think about how you’d design for different **audiences**, novices and experts, kids and adults.
-    *   It’s important to generate a lot of ideas: you never know what will come up throughout the rest of the design process. Don’t cross out any ideas, throw away any papers, or start narrowing any ideas down!
-    *   **Tips for effective individual brainstorming:**
-        *   **1. Write down the core problem**. Keep this visible. You want to let your mind enter a divergent thinking mode, but you also want to remain grounded in the problem. Writing down the problem and keeping it available will help you remain focused while remaining creative.
-        *   **2. Constrain yourself**. Decide that you want at least one idea in a number of different categories. Personally, I try to make sure to have at least three ideas that use non-traditional interaction methods, like touch and voice. You can constrain yourself in strange ways, too: force yourself to think of solutions that are too expensive or not physically possible. The act of thinking in these directions will help you out later.
-        *   **3. Aim for 20**. Don’t stop until you have 20 ideas. These ideas don’t have to be very well-formed or complex, they can be simple one-sentence descriptions of designs you might pursue. This forces you to think through the problem rather than getting tunnel vision on an early idea.
-        *   **4. Take a break**. You don’t need to come up with all of these at once. In fact, you’ll probably find it’s easier if you leave and come back. I’m not talking just 10-minute breaks, either. Stop brainstorming and decide to continue a couple days later, but be ready to write down new ideas that come to you.
-        *   **5. Divide and conquer**. If you’re dealing with a big problem like helping kids live more healthy lifestyles, divide it into smaller problems and brainstorm solutions for those. If we’re designing audiobooks for exercisers, we might divide things into smaller tasks like the ability to take and review notes or the ability to control playback hands-free.
-*   **Group brainstorming**
-    *   Should be done after individual brainstorming because groups tend to coalesce around ideas
-    *   **Presents some significant issues**
-        *   **Social Loafing**: The tendency to exert less effort working in groups than working alone.
-            *   People often don’t work as hard in groups. It’s easy to feel like the responsibility for unproductive brainstorming is shared and deflected. In individual brainstorming, it’s clearly on the individual.
-        *   **Conformity**: The tendency to agree with or follow the group’s reasoning and ideas.
-            *   People in groups tend to want to agree. Studies have shown that group brainstorming leads to convergent thinking. The conversation the group has tends to force the participants down the same line of thinking, generating fewer and less varied ideas than the individuals acting alone. During brainstorming, though, the goal is divergent thinking: lots of ideas, of creativity.
-        *   **Production blocking**: The tendency of some individuals in discussions to block other individuals’ participation.
-            *   In group brainstorming, there are often individuals who dominate the conversation and make it difficult for others to actually be heard. Their ideas can thus command more weight not because of the strength of the ideas, but because of the volume of the description. 
-        *   **Performance matching**: The tendency to match one’s level of performance to other collaborators’.
-            *   People tend to converge in terms of passion and performance, which can lead to a loss of momentum over time. That might be able to get people excited if they’re around other excited people, but more often it saps the energy of those that enter with enthusiasm.
-        *   **Power dynamics**: The tendency to defer to more senior individuals, or to overpower less senior individuals.
-            *   No matter how supportive and collaborative a boss might be, there likely always exists a tacit pressure to agree with her suggestions, which dampens creative brainstorming.
-            *   There also exists considerable literature stating that other biases based on gender, age, or race can play into these group sessions as well.
-    *   **DO NOT AVOID GROUP BRAINSTORMING ALTOGETHER.**
-        *   Instead, enter into group brainstorming with strong ideas of how to address these issues, ideally after a phase of individual brainstorming has occurred
-    *   **Rules for group brainstorming**
-        *   Rules by Osborn:
-        *   1. **Expressiveness**. Any idea that comes to mind, share it out loud, no matter how strange.
-        *   2. **Non-evaluation**. No criticizing ideas. No evaluating ideas yet.
-        *   3. **Quantity**. Brainstorm as many as possible. The more you have, the greater your chance of finding a novel one.
-        *   4. **Building**. While you shouldn’t criticize others’ ideas, you should absolutely try to build on them.
-        *   Four more rules added by Oxley, Dzindolet, and Paulus in 1996 to help individuals understand how to act in group brainstorming:
-        *   5. **Stay focused**. Keep the goal in mind at all times.
-        *   6. **No explaining ideas**. Say the idea and move on. No justifying ideas.
-        *   7. **When you hit a roadblock**, revisit the problem. Say it again outloud.
-        *   8. **Encourage others**. If someone isn’t speaking up, encourage them to do so.
-        *   **Note**: all eight of these rules prescribe what individuals should do, but they’re only effective if every individual does them. So, it’s good to cover these rules, post them publicly, and call one another on breaking from them
-    *   **More tips - apply less to the individual participants and more to the design of the activity as a whole**
-        *   1. **Go through every individual idea**. Have participants perform individual brainstorming ahead of time and bring ideas to the group brainstorming session, and explicitly make sure to go through each one. That will help avoid converging around an idea too early.
-        *   2. **Find the optimal size**. Social loafing occurs when there’s a lack of individual responsibility. When you have so many people that not everyone would get to talk anyway, it’s easy for disengagement to occur. I’d say a group brainstorming session should generally not involve more than five people. If more people need to give perspectives than that, then you can have intermediate groups that then send ideas along to a later group.
-        *   3. **Set clear rules for communication**. Get a 20 second hour glass or timer, and when someone starts talking, start it -- once the timer is up, someone else gets to speak. The goal is to ensure no one can block others’ ideas, whether intentionally or accidentally.
-        *   4.** Set clear expectations**. Enthusiasm starts to wane when people are unsure how long a session will go or what will mark its end. You might set the session to go a certain amount of time, or dictate a certain number of ideas get generated: no matter how you do it, make sure people can assess where in the brainstorming session they are.
-        *   5. **End with ideas, not decisions**. It’s tempting to want to leave a brainstorming session with a single idea on which to move forward. That’s not the goal, though. Your brainstorming session should end with several ideas. Then, let them ruminate in everyone’s minds before coming back and choosing the ideas to pursue later.
-
-**[GOAL #3] Students will understand methods for brainstorming design alternatives.**
-
-
-
-*   Rule out the ideas that are technologically unfeasible and unrealistic for more practical reasons
-*   Create some timelines covering the sequence of events in the task
-*   Use user personas to explore the cognitive load of the users
-*   **Design alternatives**: explore different ways to facilitate the user’s task.
-    *   You might need to make sure to create personas for different stakeholders.
-    *   Create personas for all types of users, and make sure to explore scenarios that affect the different stakeholders.
-
-**[GOAL #4] Students will understand rapid ways of exploring design alternatives from the perspectives of personas, timelines, and scenarios.**
-
-
-
-*   **Personas**: create actual characters surrounding our users
-    *   Give them a name, face, any details relevant to our design: why/when/how/what/who/where questions
-    *   We want to create at least three or four of these personas, and perhaps more depending on how many different stakeholders we have for our problem.
-    *   The important thing is that these should be pretty different people, representing different components of the personas.
-    *   Using these personas, we revisit our design alternatives
-*   **User profiles**
-    *   Personas are meant to give us a small number of characters we can reason about empathetically. However, it can sometimes also be useful to formulaically generate a larger number of user profiles to explore the full design space.
-    *   We can do this by defining a number of different variables about our user, and the possibilities within each.
-    *   Example:
-        *   We care about novice and expert users.
-        *   We care about serious and casual users.
-        *   We care about high and low motivation users.
-        *   We care about tech literate and tech illiterate individuals.
-        *   We care about users that use the interface rarely and often.
-        *   For each of these sets, there are design implications. In deciding what to design, we need to understand what groups, what profiles we’re designing for, and use that to inform our design decisions.
-*   **Timelines**
-    *   Can also be called journey maps, although journey maps usually cover much longer periods of time.
-    *   The goal is to take a persona and stretch it out over the timeline of the task in which we’re interested.
-    *   _What prompts this persona to start engaging in the task?_
-    *   _What actions lead up to starting the task?_
-    *   _How are they feeling at every stage of the task?_
-    *   _How would each design alternative impact their experience throughout this process?_
-    *   Exploring the different alternatives in this way allows us to start to gauge which designs might have the greatest potential to positively impact the user’s experience.
-*   **Scenarios and storyboards**
-    *   Rather than outlining the whole course of the interaction, **scenarios** let us discuss the specific kinds of interactions and events we want to handle.
-    *   **Storyboard**: sequences of diagrams or drawings that outline what happens with a particular user in a particular scenario
-    *   It’s not critical that we explore every combination of persona, scenario, and design alternative: this is more of a fluid process of exploring what ideas have potential and are worth exploring further.
-    *   We might find there are certain combinations of scenarios and personas that we really care about that completely rule out some design alternatives
-*   **User modeling**
-    *   Explore design alternatives through task analysis, including cognitive task analysis and GOMS (Goals, Operators, Methods, and Selection) model, as part of our needfinding
-        *   Start to look at how exactly the goals, operators, and methods of a GOMS model map up to the ideas of our design alternatives
-        *   _How does the user achieve each of their goals in each interface? How relatively easy are they between different design alternatives?_
-        *   With the results of our cognitive task analyses, we can start to ask some deeper questions about what the user is keeping in mind as well.
-        *   _Given what we know about the things competing for our users’ attention, what are the likelihoods that each interface will work?_
-    *   In some ways, this is a similar process to using the personas we outlined earlier, but with a subtle difference.
-        *   Personas are personal and meant to give us an empathetic view of the user experience.
-        *   User models are more objective and meant to give us a measurable and comparable view of the user experience.
-        *   ![screenshot](/images_Exam1/image2.png)
-
----
 
 
 **2.5 Design Principles and Heuristics**
