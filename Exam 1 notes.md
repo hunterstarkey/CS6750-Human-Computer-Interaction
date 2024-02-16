@@ -976,7 +976,107 @@
 
 
 ---
+**3.5 Prototyping**
 
+**[GOAL #1] Students will understand the role of prototyping in the design life cycle.**
+
+
+
+*   Like brainstorming design alternatives, **prototyping** involves looking at the different ideas available to us and developing them a bit.
+    *   The major distinction, though, is that in prototyping, we want to actually build things we can put in front of users.
+    *   But that doesn’t mean building the entire interface before we ever have a user look at it --- We want to get user feedback as quickly and rapidly as possible, and build up more sophisticated prototypes as we go through the design life cycle.
+*   **Timing**
+    *   **Early prototyping**: very rapid revision on preliminary ideas. This happens on our first few iterations through the design life cycle.
+    *   **Late prototyping**: finishing touches on a final design, or revising a design that’s already live. This happens after we’ve already been through several iterations of our design life cycle.
+
+**[GOAL #2] Students will understand the spectrum from low- to high-fidelity prototypes and which are appropriate at the right times.**
+
+
+
+*   **Representations**
+    *   Text
+    *   Paper
+    *   Wireframe
+    *   Physical
+    *   Live
+    *   ![screenshot](/images_Exam2/image6.png)
+   
+*   **Fidelity**: refers to the completeness or maturity of the prototype.
+    *   **Low fidelity**: something like paper or simple drawings, very easy to change
+    *   **High fidelity**: wireframe or a working interface, something harder to put together
+    *   We want to use easily changeable low-fidelity prototypes to explore our ideas before moving on to high-fidelity prototypes.
+    *   **Trade-offs**
+        *   Prototyping is largely about the trade-offs we have to make. Our goal is to maximize these trade-offs.
+        *   We want to start with the easier low-fidelity prototypes to get initial ideas, to evaluate big designs and big plans, and to make sure we’re on the right track.
+        *   Then as we go along, we can move toward the higher-fidelity prototypes that take more time to assemble because we have some initial evidence that our designs are sound.
+        *   It’s really important here to also stress that our prototypes are prototypes. They aren’t complete interfaces.
+        *   Don’t become a runaway train of designing: design deliberately and get feedback often
+    *   ![screenshot](/images_Exam2/image21.png)
+
+  
+
+*   **Evaluation**
+    *   These different kinds of prototypes also lend themselves to different kinds of evaluation structures.
+    *   **LF**: fine for evaluating the relative function of an interface, whether or not it can do what it’s designed to do. 
+    *   **HF**: can be useful in evaluating the readability of the interface. To evaluate actual performance, like how long certain tasks take or what designs lead to more purchases, we generally need a high-fidelity prototype later in the cycle
+    *   ![screenshot](/images_Exam2/image4.png)
+
+    
+
+*   **Scope**
+    *   **Vertical prototypes**: take a small portion of the interaction and prototype it in great detail.
+    *   **Horizontal prototypes**: cover the design as a whole, but in a more shallow way.
+    *   Usually start with the horizontal prototype earlier on and move toward the deeper vertical prototype later, but in reality you’ll likely move back and forth between these approaches throughout the timeline.
+    *   ![screenshot](/images_Exam2/image14.png)
+
+    
+**[GOAL #3] Students will understand the basic methods of performing prototyping.**
+
+
+
+*   **Tips for effective prototyping**
+    *   1. **Keep prototypes easy to change**. Your goal here is to enable rapid revision and improvement. It’s easy to make quick changes to something on paper, but it’s harder to make it to code or physical prototypes.
+    *   2. **Make it clear that it’s a prototype**. If you make a prototype look too good, users may focus on the superficial elements like colors or font. By letting your prototype look like a prototype, you can help them focus on what you’re ready to test.
+    *   3. **Be creative**. Your goal is to get feedback. Do whatever it takes to get feedback. Don’t let the type of prototype you’re designing constrain the kind of feedback you can get: if you find your current prototypes don’t give the right kind of feedback, find ones that do!
+    *   4. **Evaluate risks**. One of the biggest goals of prototyping is to minimize the time spent pursuing bad designs by getting feedback early. Ask yourself consistently: how much would I lose if I found users hate the parts of my design they haven’t seen yet? Whenever that answer gets larger than a couple hours, try to get feedback to make sure you’re not wasting time.
+    *   5. **Prototype for Feedback**. The goal of a prototype is to get feedback. You could spend a lot of time focusing on things like font selection and color choice, but that’s probably not the feedback you need when you’re exploring your big alternatives. Prototype for the kind of feedback you want to get.
+*   **Verbal prototypes**
+    *   Very simplest of prototypes; lowest-fidelity; literally just describing the design we have in mind.
+    *   it’s extremely easy to do, although it can be hard to do effectively.
+    *   _Social desirability bias_ is big here because it’s difficult to describe our idea in a way that allows the participant to feel comfortable agreeing with us. So, we need to make sure to ask for specific and critical feedback.
+    *   At the same time, though, how do we really know the user understands the design we’re describing? We’re working toward becoming experts in these areas, and we don’t want to fall victim to _expert blindspot_ by assuming our explanation makes sense to a novice. _Analogies_ can be powerful tools for explaining prototypes: describe your interface in terms of other tools the user might know about.
+*   **Paper prototypes**
+    *   One step above just ‘describing our ideas’ to our user in a verbal prototype would be drawing them out. This is what we call a paper prototype (could do this for anything from designing an on-screen interface to designing the placement of controls in a vehicle to designing a physical interaction device)
+    *   Paper prototyping isn’t only useful for testing out big interface design. You can also do some interaction with it (also called _card-based prototyping_ -- the idea is each screen would be on a card that I can quickly sub in and out)
+    *   Allows us to prototype a decent amount of my interface’s interaction with relatively low prototyping effort
+*   **Wizard of Oz prototypes**
+    *   Paper prototyping is great when we’re designing flat interfaces for screens, but WoO is great if you were designing a voice interface or a gesture interface
+    *   The idea here is that we, “behind the curtain”, do the things that the interface would do once it’s implemented ⇒ that way, we can test out the interactions that we plan to design and see how well they’ll work.
+    *   In practice, Wizard of Oz prototypes can actually get very complex. You could have entire programs that work by having a person supply the requested input at the right time.
+    *   As a concept, though, a Wizard of Oz prototype is a prototype where the user can interact with the system somewhat authentically, while a human supplies the functionality that hasn’t yet been implemented.
+*   **Wireframing prototypes**
+    *   In wireframing, we use some more detailed tools to mock up what an interface might look like. This lets us experiment with some additional details like font size, colors, and the challenges of screen real estate.
+    *   There are lots of tools out there for wireframing that come equipped with built-in common widgets and layouts, but you can also do some rudimentary wireframing in something as simple as PowerPoint or Google Drawings.
+*   **Physical prototypes**
+    *   Wireframing is great for prototyping on-screen interfaces, but physical prototypes are if you’re working on something more physical and three-dimensional
+    *   It doesn’t have to actually work; that’s where a lot of designers get tripped up: they think to get good feedback on a design, they have to have a working version, but you don’t. There are lots of elements you can test without actually implementing anything
+*   **Prototyping pros and cons**
+    *   ![screenshot](/images_Exam2/image8.png)
+
+
+*   **Design lifecycle**
+    *   We did some initial needfinding, brainstormed some alternatives, and prototyped those alternatives on paper.
+    *   Now, we evaluate those prototypes with real people.
+    *   The results of that evaluation tell us if we need to go back and understand the task better.
+    *   That evaluation tells us the new questions we need to ask about the users’ tasks.
+    *   Those results help us reflect on our alternatives as a whole.
+    *   Then, equipped with that initial evaluation, the additional needfinding, and the additional brainstorming, we return here and prototype again.
+    *   If our prototype was pretty successful, we might increase the fidelity, increase the detail, and evaluate again.
+    *   If it wasn’t, we might stay low-fidelity with a different design altogether.
+    *   Each time we develop a new prototype, we’re going through this cycle again
+    *   ![screenshot](/images_Exam2/image15.png)
+
+---
 
 
 **2.5 Design Principles and Heuristics**
