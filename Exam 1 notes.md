@@ -861,6 +861,7 @@
 *   **Invisible Interface**: an interface that disappears between the user and their task
     *   At their best, the interface actually disappears, which is what we mean by an invisible interface.
     *   With an invisible interface, the user spends no time having to think about the interface they’re using: all their time is dedicated to thinking about the task that they’re performing. Even though there is an interface in the middle, the user spends no time thinking about it. Instead, they feel as if they are interacting directly with the task.
+    * For example: voice-activated assistants such as Siri or Alexa.
     *   Whether through using direct manipulation, through innovative approaches to shrinking these gulfs, or through the user’s patience and learning, our ultimate goal is for the interface between the user and the task to become invisible.
 *   **Tips for designing invisible interfaces**
     *   1. **Use affordances**. We talk more about affordances when we discuss design principles. Affordances are places where the visual design of the interface suggests how it is to be used. Buttons are for pressing, dials are for turning, switches are for flicking. Use these expectations to make your interface more usable.
