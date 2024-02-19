@@ -897,7 +897,7 @@
     *   **Processing**: cognition, how the brain stores and reasons over the input it’s received.
 *   Output = action
     *   **Output**: how the brain then controls the individual’s actions in the world.
-
+*Perception is what we notice, cognition is what we understand, and action is what we do.
 **[GOAL #2] Students will understand the strengths and weaknesses of the different types of perception in designing interfaces.**
 
 
