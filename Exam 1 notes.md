@@ -1190,7 +1190,487 @@
 *   And finally, Susan Weinschenk and Dean Barker have a set of guidelines that provide an even more holistic view of interface design, including things like linguistic and cultural sensitivity, tempo and pace, and domain clarity.
 
 
+---
 
+
+**2.6 Mental Models and Representations**
+
+**[GOAL #1] Students will understand the nature of mental models in feedback cycles.**
+
+
+
+*   **Mental model**: An internal, simulatable understanding of external reality
+    *   It’s the understanding you hold in your head about the world around you and how it works. It’s an understanding of the processes, relationships, and connections in real systems.
+    *   Simulating a mental model allows you to make expectations and predictions and figure out how to achieve your goals in the world by matching the outcome to our mental model.
+    *   When reality doesn’t match the mental model, it makes us uncomfortable. When it happens over and over, it can frustrate us. It can make us feel that we just don’t and will never understand.
+    *   As interface designers, this presents us with a lot of challenges.
+        *   We want to make sure that the user’s mental model of our systems matches the way our systems actually work.
+        *   A good interface will give the user a good mental model of the system it presents
+        *   We can do this in two primary ways: by designing systems that act the way people already expect them to act, and by designing systems that by their design teach people how they will act.
+        *   That way, we can minimize the discomfort that comes from systems acting in ways that users don’t expect.
+        *   When you’re designing an interface, you’re playing very much the role of an educator. Your goal is to teach your user how the system works through the design of the interface.
+        *   Most users don’t watch tutorials or read documentation. You have to design interfaces that teach users while they’re using them (make them learnable). That’s where representations will come in. Good representations show the user exactly how the system actually works. It’s an enormous challenge, but also incredibly satisfying when done well.
+*   **Five tips, or principles, to leverage for creating learnable interfaces**:
+    *   These principles of learnability were proposed by Dix, Finlay, Abowd, and Beale in their book Human-Computer Interaction.
+    *   **1. Predictability**. Looking at an action, can the user predict what will happen? For example, graying out a button is a good way to help the user predict that clicking that button will do nothing.
+    *   **2. Synthesizability**. Not only should the user be able to predict the effects of an action before they perform it, they should also be able to see the sequence of actions that led to the current state. This can be difficult in graphical user interfaces, but the log of actions through the undo menu can make it easier. Command lines make this easier, actually, as they give a log of the commands in order.
+    *   **3. Familiarity**. This is similar to Norman’s principles of affordances. The interface should leverage actions with which the user is already familiar from real-world experience. For example, if you’re trying to indicate something is either good or bad, you’d likely want to use red and green rather than blue and yellow.
+    *   **4. Generalizability**. Similar to familiarity and to Norman’s principle of consistency, knowledge of one user interface should be generalize to others. If your interface has tasks that are similar to other interfaces’ tasks, like saving, copying, and pasting, it should perform those tasks in the same way.
+    *   **5. Consistency**. Slightly different than Norman’s principle of consistency, this means that similar tasks or operations within a single interface should behave similarly. For example, you wouldn’t want to have Ctrl+X cut text if text is selected, but close the application if no text is selected. Its behavior should be consistent.
+    *   Using these principles can help the user leverage their existing mental models of other designs, as well as develop a mental model of your interface as quickly as possible.
+
+**[GOAL #2] Students will understand the relationship between representations and strong mental models.**
+
+
+
+*   **Representations**: Internal symbols for an external reality
+    *   In order to develop good mental models, we need to give users good representations of the system with which they’re interacting.
+    *   That way, we can help users learn how to use our interfaces as quickly as possible.
+*   The most powerful tool in our arsenal to help ensure users have effective mental models of our system is representation.
+    *   We get to choose how things are visualized to users, and so we get to choose some of how their mental model develops.
+    *   Using good representations can make all the difference between effective and ineffective mental models.
+
+**[GOAL #3] Students will understand the criteria for a good representation for forming mental models.**
+
+
+
+*   Audio is a poor representation of complex problems. Visual representation is better for complex problems
+*   **Characteristics of good representations**
+    *   First, good representations **make relationships explicit**.
+    *   Second, good representations **bring objects and relationships together**.
+        *   We’re visualizing the objects, but in a way that exposes the relationships among them.
+    *   Third, a good representation **excludes extraneous details**.
+    *   Fourth, good representations **expose natural constraints**.
+*   **Representations in interfaces**
+    *   Representations are all around us in the real world, but they play a huge role in interfaces as well. Designing representations of the system state is actually one of the most common tasks you might perform as an interface designer.
+    *   Representations, when used correctly, can make many tasks trivial or even invisible, and we as interface designers have a lot of control over representations in our designs.
+    *   Example: scrollbar is a representation of your relative position in a document
+*   **Analogies and metaphors**
+    *   Analogies make the interface more learnable, but they also risk restricting the interface to outdated requirements or constraints
+    *   Analogies and metaphors have a downside, thought: when you choose to use them, users don’t know where the analogy ends.
+    *   While analogies are powerful ways to help users understand our interfaces, we also have to pay attention to what misconceptions they might introduce.
+    *   While we need to leverage analogies and prior experiences whenever possible, we also need to be aware that eventually, if we’re doing something interesting or new, analogies are going to break down. Eventually, we’re going to have to teach the user to use the unique elements of our interface.
+*   **Design principles revisited**
+    *   First, the idea that **people reason by analogy** to past interfaces or metaphor to the real world is one of the reasons the principle of consistency is so important. We want to be consistent with the analogies and metaphors that people use to make sense of our interfaces.
+    *   Second, when we say that an interface should teach the user how the system works, we’re echoing the idea of **affordances**. The way the system looks should echo how it’s used. Just by observing the system, the user should be actively learning how to interact with it.
+    *   Third, representations are important because they **map the interface to the task at hand**. A good representation is one that users can use to predict the outcomes of certain actions. In other words, a good representation lets users predict the mapping between their actions in the interface and outcomes in the world.
+
+**[GOAL #4] Students will understand the relationship between learning curves and representations.**
+
+
+
+*   **Learning curve**: plots expertise against experience
+    *   Every interface requires the user to do some learning to understand how to use it. Very often, we visualize these as learning curves.
+    *   Generally, as the user gains more experience, they also gain more expertise.
+    *   The shape and steepness of this curve can vary.
+*   Ideally, we want a learning curve that grows quickly in expertise with little experience (“**rapid**” or “**steep**” learning curve).
+*   **Slow learning curve**
+    *   Interfaces that are more difficult to use would have slower learning curves.
+    *   The user needs a lot more experience to reach the same level of expertise.
+*   **How do we reach proficiency faster?**
+    *   For one, if we’re consistent with existing conventions and use analogies that users understand, we can actually start them off with some initial expertise. 
+    *   From there, we want to make the ascension as rapid as possible. One way we can do that is by using representations and affordances that help the user immediately understand how to use the interface.
+    *   So, good design is about making a user achieve expertise as quickly as possible, either through starting them off higher or lifting them up quicker.
+
+**[GOAL #5] Students will understand the concepts of learned helplessness, expert blindspot, slips, and mistakes.**
+
+
+
+*   As we design interfaces, we will no doubt encounter instances where the user makes mistakes. Sometimes this might be because our users are stressed, busy, or distracted, and other times it might be because our users don’t understand our interfaces or even their own goals.
+*   As designers, though, we know that there’s no such thing as user error: any user error is a failure of the interface to properly guide the user to the right action.
+    *   User error: slips and mistakes
+*   **Slips**: when the user has the right mental model, but does the wrong thing anyway.
+    *   Could be a violation of the consistency principle
+    *   Norman further divides slips into two categories:
+        *   **Action-based slips** are places where the user performs the wrong action, or performs the right action on the wrong object, even though they knew the correct action. They might click the wrong button or right click when they should left click.
+        *   **Memory lapse slips** are places where the user forgets something they knew to do. Forgetting to start a timer or initiate logging might be examples of memory lapse slips.
+*   **Mistakes**: when the user has the wrong mental model, and does the wrong thing as a result
+    *   Could be a violation of the tolerance principle
+    *   Norman divides mistakes into three categories:
+        *   The first is **rule-based**, where the user correctly assesses the state of the world but makes the wrong decision based on it.
+        *   The second is **knowledge-based**, where the user incorrectly assesses the state of the world in the first place.
+        *   The third is **memory lapse**, similar to slips, but this is about failing to fully execute a plan because of distractions or other memory lapses.
+*   We want to help prevent routine errors by leveraging consistent practices. We want to let our interface offload some of the demands on working memory from the user to avoid memory lapse errors. And we want to leverage good representations to help users develop the right mental models to minimize rule-based and knowledge-based errors. And while errors are inevitable, we should make sure to leverage the tolerance principle to make sure their repercussions can never be too bad.
+*   **Learned helplessness**: when the user working with the interface learns that they’re helpless to actually use the system.
+    *   When there is no discernible interaction between the input and the output
+    *   When the user acts in the system over and over and over again, but never receives input that helps them? Never even receives input that makes them think they’re making progress
+*   **Expert blindspot**
+    *   Generally, when we’re developing interfaces, we’re going to be experts in the domain. It’s rare that you design an interface to help people do something you don’t know how to do yourself. But as a result, there’s risk for expert blind spot.
+    *   When you’re an expert in something, there are parts of the task that you do subconsciously, without even thinking about them. And yet if we were suddenly asked to train someone else, there are lots of things we’d forget to say, or lots of things we would think would be obvious. 
+    *   And that’s exactly what you’re doing when you’re designing an interface. You’re teaching the user how to use what you designed. You’re teaching them without the benefit of actually talking to them, explaining things to them, or demonstrating things for them. You’re teaching them through the design of your interface.
+    *   So you have to make sure that you don’t assume they’re an expert, too. You have to overcome that expert blind spot **because we are not our users**.
+
+
+**2.7 Task Analysis**
+
+**[GOAL #1] Students will understand the nature of task analysis in formalizing our understanding of user tasks.**
+
+
+
+*   **Human information processor models** (includes the GOMS model): focuses on the input and output.
+    *   Notice this is similar to the processor model of the user we discuss elsewhere.
+*   **Cognitive task analysis**: a way of trying to get inside the user’s head instead of focusing on input and output
+    *   Notice that this is similar to the predictor model of the user.
+
+**[GOAL #2] Students will understand GOMS and cognitive task analysis as two methods for performing task analysis.**
+
+
+
+*   **GOMS**
+    *   It builds off of the processor model of the human’s role in a system.
+    *   GOMS Model gets its name from the four sets of information it proposes gathering about a task:
+        *   Goals: the user’s goals in the system.
+        *   Operators: the operators the user can perform in the system.
+        *   Methods: the methods for achieving goals in the system.
+        *   Selection rules: the rules for choosing between competing methods.
+        *   ![screenshot](/images_Exam2/image13.png)
+
+*   The GOMS Model thus proposes that every human interacting with a system has a set of goals they want to accomplish.
+    *   To accomplish those goals, they have methods, which are composed of series of operators.
+    *   They also have rules for choosing between multiple methods that would each get them to the goal.
+*   **Strengths and weaknesses of GOMS**
+    *   One weakness is that it does not automatically address a lot of the complexity of problems.
+    *   A second weakness is that the GOMS model assumes the user already has methods in mind (assumes the user is an expert).
+        *   That means the user is already an expert in the area.
+        *   GOMS does not do a good job of accounting for novices or accounting for user errors.
+    *   The strength of GOMS, on the other hand, is its ability to formalize user interaction into steps that we can actually use to make predictions.
+        *   We can measure how long it takes to move between each step, and so we can predict the overall efficiency of using a particular interface. And that can focus our attention on where things can be improved.
+*   **Tips for developing GOMS models**
+    *   1. **Focus on small goals**. We’ve used some pretty big examples, but GOMS was really designed to work in the context of very small goals, like navigating to the end of a document. You can abstract up from there, but start by identifying smaller, moment-to-moment goals.
+    *   2. **Nest goals, not operators**. It’s possible to nest goals. For example, in our GOMS model of navigation, we could develop it further and break the overall task of navigating to a destination down to smaller goals like changing lanes or plotting routes. Operators, however, are the smallest “atom” of a GOMS model. These don’t break down any further, and these must be actions that are performed.
+    *   3. **Differentiate descriptive and prescriptive**. Make sure to identify whether you’re building a model of what people do, or what you want them to do. You can build a GOMS model of what users should do with your interface, but you shouldn’t trick yourself into thinking that’s what they will do.
+    *   4. **Assign costs to operators**. GOMS was designed to let us make predictions about how long certain methods will take. The only way we can do that is if we have some measurement of how long the individual operations take. Usually this is time, but depending on the domain, we might be interested in phrasing the cost differently as well.
+    *   5. **Use GOMS to trim waste**. One of the benefits of GOMS is it helps you visualize where an unnecessary number of operators may be required to accomplish a task. This is bolstered by the costs assigned to them. Use GOMS to identify places where the operators required can be simplified by the interface.
+*   **Variations of GOMS**
+    *   These variations share the commonality of goals, operators, methods, and selection criteria, but they differ in what additional elements they provide.
+    *   Bonnie John and David Kieras cover four popular variations in a paper from 1996:
+        *   They start with the keystroke-level model, the simplest technique.
+            *   Here, the designer simply specifies the operators and execution times for a an action, and sums them to find the complexity of an interaction.
+            *   This method proposed six categories of operators: for modern modeling, we would need some new ones to cover touchscreens and other novel interfaces.
+        *   CMN-GOMS is an extension of GOMS that features submethods and conditions in a strict goal hierarchy.
+        *   Natural GOMS Language, the third, is a natural-language form of GOMS, that lends itself to human interpretation.
+            *   In all these cases, the important point of emphasis is the way these models allow us to focus in on places where we might be asking too much of the user.
+        *   4th type
+            *   For example, in this model, the user was being asked to recall lots of information from memory. By making the assumptions and actions this explicit, this model lets us target where working memory is being overly taxed in a way that we might miss with more high-level designs.
+*   **GOMS to cognitive task analysis //// participant+processor+predictor**
+    *   The GOMS model is a human information processor model: it largely considers the human to be an input/output machine, and it doesn’t get too far into the internal reasoning of the human. Instead, it stills them into things that can be described explicitly, like goals and methods.
+    *   Some would argue, though, that human reasoning is too nuanced and complex to be so simplified. They advocate other models that get more into what goes on inside the user’s head.
+    *   That’s where cognitive task analysis comes in: cognitive task analysis is another way of examining tasks, but it puts a much higher emphasis on things like memory, attention, and cognitive load. Thus, cognitive task analysis adopts more of the predictor view of the human’s role in the system.
+    *   This conflict between more processor-oriented and more predictor-oriented models of the user actually gets at the core of an old battle in psychology between behaviorism and cognitivism.
+        *   **Behaviorism**: an approach to psychology that emphasizes behavior as a product of stimuli and the environment. Behaviorism emphasizes things that can be observed: we can see what input a person is receiving, and we can see the output they are producing, and that may be all we need to understand to design things.
+        *   **Cognitivism**: an approach to psychology that emphasizes internal thought processes. Cognitivism, on the other hand, suggests we can and should get into what people are actually thinking inside their minds, how systems like memory and learning and perception work.
+        *   Joyner prefers methods that focus on cognition.
+        *   Both approaches have significant value, however: The GOMS model and its emphasis on identifying goals and operators is actually very useful in HCI because it forces us to very clearly and deliberately identify user goals and the sequences of actions that accomplish them. We can get so caught up in user experiences that we forget the user experience is born out of the individual operators. So while I wouldn’t advocate focusing solely on the user as an input-output information processor, there is value in defining the user’s operations as clearly and specifically as we define the computer’s.
+*   **Cognitive task analysis**
+    *   Cognitive Task Analysis is not a single method, but rather a general type of method to approach the evaluation of how people complete tasks. Performing a cognitive task analysis involves a number of techniques and methods that we discuss more when discussing the design life cycle.
+    *   For right now, though, we’re interested in what kind of information we’re trying to gather, not how we’re gathering it.
+    *   Cognitive task analyses are especially concerned with understanding the underlying thought process in performing a task. Not just what we can see, but specifically what we can’t see.
+    *   There are a lot of different methods for performing cognitive task analyses, but most methods follow a particular common sequence:
+    *   ![screenshot](/images_Exam2/image1.png)
+        *   1. **Collect preliminary knowledge**: while we as interface designers don’t need to become experts in a field, we need a good bit of familiarity with it. So, we might observe people performing the task.
+        *   2. **Identify knowledge representations**: in other words, what kinds of things does the user need to know to complete their task? Note that we’re not yet concerned with the actual knowledge they have, only the types or structures of the knowledge they have.
+            *   For example, we want to know: does this task involve a series of steps in a certain order? A collection of tasks to check off in any order? A web of knowledge to memorize?
+        *   3. **Apply focused knowledge elicitation methods**: populate those knowledge representations.
+            *   It is in this stage that we start to recognize what the user actually knows.
+            *   During this stage, we identify all the specific actions they take, the knowledge they must have in mind to take those actions, the interruptions that can change their thought process, the equipment involved, and the sensory experience of the user.
+        *   4. **Analyze and Verify Data Acquired**: part of that is just confirming with the people we observed that our understanding is correct.
+            *   Then, we attempt to formalize it into structures that can be compared and summarized across multiple data-gathering methods.
+        *   5. **Format Results for the Intended Application**: finally, we need to take those results and format them in a way that is useful for interface design.
+            *   We want to develop models that show what the user was thinking, feeling, and remembering at any given time and make those relationships explicit.
+    *   **Pros and cons**
+        *   **Strength**: Emphasizes mental processes
+            *   Unlike the GOMS model, cognitive task analysis puts an emphasis on what goes on inside the user’s head. It is thus much better-equipped to understand how experts think and work.
+        *   **Strength**: Formal enough for interface design
+            *   The information it generates are formal enough to be used for interface design, for comparison among alternatives, and more.
+        *   **Weakness**: Time-intensive
+            *   Cognitive task analysis is incredibly time-intensive to perform: it involves talking to multiple experts for extended periods of time, then systematically analyzing their data.
+        *   **Weakness**: May deemphasize context
+            *   And in zooming in on the individual’s own thought processes, it risks deemphasizing details that are out in the world, like the role of physical capabilities or interactions with others.
+        *   **Weakness**: Ill-suited for novices
+            *   But perhaps most importantly, cognitive task analysis, like the GOMS model, is well-suited for expert users, but ill-suited for novices.
+*   **Hierarchical task analysis**
+    *   ![screenshot](/images_Exam2/image11.png)
+    *   Cognitive task analysis advocates building models of human reasoning and decision-making in complex tasks. However, a challenge presented here is that very often, large tasks are actually composed of multiple smaller tasks.
+    *   You generally will find tasks and subtasks whenever you’re looking at the results of cognitive task analyses.
+    *   It’s important to remember the strengths supplied by this hierarchy: abstracting out unnecessary details, modularizing designs or principles, and organizing task analysis.
+    *   When you’re creating real cognitive models, you’ll likely have several levels, several states, and additional annotating information.
+*   **Other task analysis frameworks: **GOMS and cognitive task analysis are just two of many alternatives to approaching trying to understand how users approach tasks.
+    *   ![screenshot](/images_Exam2/image2.png)
+    *   More in line with GOMS, options exist like KLM, MHP, and TLM, the keystroke-level model or touch-level model, which captures even finer-grained actions for estimating performance speed.
+    *   Other extensions to GOMS add subgoals, like CPM-GOMS and NGOMSL.
+    *   Cognitive Perceptual Motor-GOMS focuses on parallel tasks, while NGOMSL focuses on creating a natural language.
+    *   More along the lines of Cognitive Task Analysis, multiple more specific methods exist as well, including: ACTA, CDM, Skill-Based CTA, TKS, and CFM.
+    *   CDM puts a focus on places where critical decisions occur, TKS focuses on the nature of users’ knowledge, and CFM focuses on complexity.
+    *   ACTA and Skill-Based CTA are two ways of gathering the information necessary to do a cognitive task analysis
+ 
+
+---
+
+
+**3.6 Evaluation**
+
+**[GOAL #1] Students will understand the role of evaluation in the design life cycle.**
+
+
+
+*   The heart of user-centered design is getting frequent feedback from users.
+*   **Evaluation**: we take what we’ve designed and put it in front of users to get their feedback.
+    *   But just as different prototypes serve different functions at different stages of the design process, so also our methods for evaluation need to match as well.
+    *   Our goal is to apply multiple evaluation techniques to constantly center our designs around the user. That’s why evaluation is a foundation of user-centered design -- just like we wanted to understand the user and the task before beginning to design, we also want to understand how the user relates to the design at every stage of the design life cycle.
+    *   **To succeed in HCI, you need a good evaluation plan.**
+        *   In industries like healthcare and education, that’s initially going to involve getting some time with experts outside the real context of the task. Bringing in doctors, nurses, and patients, and exploring their thoughts on the prototypes you’ve designed.
+        *   In some places, like education, you might be able to evaluate with real users even before the interface is ready, but in others, like healthcare, the stakes are high enough that you’ll only want real users using the interface when you’re certain of its effectiveness and reliability.
+        *   In some emerging areas, you’ll also be fighting multiple questions in evaluation.
+            *   Take virtual reality, for example: most people you encounter haven’t used virtual reality before. There is going to be a learning curve.
+            *   How are you going to determine whether the learning curve is acceptable or not? If the user runs into difficulties, how can you tell if those come from your interface or if they’re part of the fundamental VR learning experience?
+
+**[GOAL #2] Students will understand when each type of evaluation is relevant.**
+
+
+
+*   The type of evaluation we employ is **tightly related to where we are in our design process**.
+*   **Qualitative evaluation:** evaluation that emphasizes the totality of a phenomenon
+    *   Early on, we want more qualitative feedback.
+        *   We want to know what they like, what they don’t like, whether it’s readable, whether it’s understandable.
+    *   Later on, we want to know if it’s usable.
+        *   Does it minimize their workload? Is it intuitive? Is it easy to learn? What’s hard? What were you thinking while using this interface? What was your goal when you took that particular action?
+    *   The methods we use for qualitative evaluation are very similar to the methods we used for needfinding: **Interviews, think-aloud protocols, focus groups, surveys, post-event protocols**: we used these methods to get information about the task in the first place, and now we can use these techniques to get feedback on how our prototype changes the task.
+    *   **Questions to ask when designing a qualitative evaluation**
+        *   **1. Is this based on prior experience, or is it based on a live session?**
+            *   If you’re doing a qualitative evaluation on an interface that the user has used in the past, then generally you’re probably doing needfinding: you’re looking for weaknesses in an already-in-use interface to improve.
+        *   For the rest of these questions, we’ll assume that you’re evaluating an interface the user is about to see for the first time.
+        *   **2. Is this synchronous or asynchronous?** Are you going to watch the participant live, or are they going to complete the evaluation on their own?
+            *   Synchronous is usually beneficial because we can see a much greater amount of the interaction that is taking place.
+            *   However, asynchronous is often easier to carry out, especially with larger populations.
+            *   I’d generally recommend synchronous whenever possible, but asynchronous is better than nothing.
+        *   **3. How many prototypes will they be evaluating? **You might have users evaluate only one prototype, or you might have them look at multiple.
+            *   If you have them look at multiple, you want to make sure to vary the order between different participants: otherwise you might get consistently different feedback just because the user is already familiar with the problem domain when they get to a second interface.
+        *   **4. When do you want to get feedback from the user?**
+            *   There are two main protocols: think-aloud and post-event.
+            *   With a think-aloud protocol, you have users think out loud while they’re using the interface.
+            *   This is good because you get to find out exactly what they’re thinking and seeing. However, thinking aloud tends to bias the way users use the interface.
+            *   They may act more deliberately and less intuitively, or put forth greater effort.
+            *   Post-event protocols ask the user to wait until the end to give their feedback, which can lead to more natural interactions while they play with the interface.
+            *   However, note that users are often subpar at explaining why they like or dislike things or why they made certain decisions, so you shouldn’t take everything the user says at face value.
+        *   **5. Do you want this feedback from individuals or from groups?**
+            *   Focus groups are used when multiple users talk together about their experiences. This can lead to better explanations, but it can also bias users toward the stronger personalities in the group.
+            *   Individual interviews or surveys force the user to be the only source of knowledge, but that means the user isn’t biased by other outside views.
+            *   As has become a trend, you’ll notice there are strengths and weaknesses with every approach, so we should vary what we do often.
+    *   **Capturing qualitative evaluation**
+        *   With qualitative research, we want to capture as much of the session as possible because things could come up that we don’t anticipate.
+        *   When selecting a way to capture your qualitative evaluation, ask yourself: will my subjects find the camera intrusive? Am I capturing what happens on screen? How difficult will this data be to analyze?
+        *   **Actually record the session with video.**
+            *   **Pros**: automated/automatic, captures everything/comprehensive, allows us to focus on administering the session instead of capturing it (passive)
+            *   **Cons**: It’s intrusive, it doesn’t capture on-screen interactions very well (screen-less), and it’s difficult to analyze. Someone has to watch it.
+            *   Some of these issues can be resolved -- we can sync the video capture with screen capture, for instance.
+            *   However, if we’re dealing with children, at-risk populations, or delicate subject matter, the intrusiveness of a camera can be overwhelming.
+        *   **Note-taking**
+            *   **Pros**: Cheap and easy, non-intrusive, easier to analyze than video
+            *   **Cons**: Slow, not comprehensive (limited), interferes with administration (manual)
+            *   If you’re going to use note-taking as your method for capturing qualitative evaluation, I recommend you have two people: a note-taker and an administrator. That lets each focus on their own responsibilities.
+        *   **Software logging: **If we’re designing software, actually log the behavior in the software.
+            *   This is in some ways the best of both worlds.
+            *   **Pros**: Automatic/automated, allows us to focus on administering the session (passive), non-intrusive, analyzable
+            *   **Cons**: Not as comprehensive (limited), very low-level (narrow), requires working software (tech-sensitive)
+    *   **Tips for conducting successful evaluations**
+        *   1. **Run pilot studies**. Recruiting participants is hard. You want to make sure that once you start working with real subjects, you’re ready to gather real useful data. So, try out your experiment with friends, family, or coworkers before trying it with real subjects to iron out the kinks in your design and directions.
+        *   2. **Focus on feedback**. It’s tempting in qualitative evaluations to spend too much time trying to teach this one user. If the user criticizes an element of the prototype, you don’t need to explain to them the rationale. Your goal is to get feedback to design the next interface, not to teach the current user.
+        *   3. **Use questions when users get stuck**. That way, you get some information on why they’re stuck and what they’re thinking. Those questions can also be used to guide users to how they should use it to make the session less instructional.
+        *   4. **Instruct users what to do, but not how to do it**. This doesn’t always apply, but most often we want to design interfaces that users can use without any instruction whatsoever. So, in performing qualitative evaluation, give them instruction on what to do, but let them try to figure out how to do it. If they try to do it differently than you expect, then you know how to design the next interface.
+        *   5. **Capture satisfaction**. Sometimes we can get so distracted by whether or not people can use our interface that we forget to ask whether they like using our interface! So, make sure to capture user satisfaction in your qualitative evaluation.
+*   **Empirical evaluation: **evaluation based on numeric summaries or observations of a phenomenon
+    *   Most empirical evaluations are comparisons
+    *   This is where we actually do some controlled experiments and evaluate the results quantitatively.
+    *   For that, we need many more participants, and we also want to make sure we’ve addressed the big qualitative feedback first.
+    *   Then at the end, we might want to know something more quantitative.
+    *   We might want to actually measure whether the time to complete a task has changed or whether the number of sales has increased.
+    *   Goal: strong conclusions!
+    *   **Designing an empirical evaluation**
+        *   We have multiple conditions, which we call **treatments**.
+            *   These treatments could be different interfaces, different designs, different colors, whatever we’re interested in investigating.
+            *   Our goal here is to investigate the comparison between the treatments, and end up with a conclusion about how they’re different.
+            *   However, we have to be careful to make sure that the differences we observe are really due to the differences between the treatments, not due to other factors.
+                *   For example, imagine we were testing the difference between two logos, and we wanted to know what worked better: orange or teal.
+                *   However, we also make one a circle while the other is a triangle. In the end, we wouldn’t be able to comment on orange vs. teal, we could only comment on orange circle vs. teal triangle.
+                *   To make a judgment about the color, we need to make sure the color is the only thing we’re comparing.
+                *   Of course, here, this sounds silly. In practice, though, differences can be more subtle. If you were testing different layouts, you might miss that one loads a bit faster, or one uses prettier images.
+        *   Once we’ve designed the treatments, it’s time to design the experiment.
+            *   Our first question is: what do participants do? Does each participant participate in one treatment, or both?
+                *   If each participant only participates in one treatment, then our next step is easy: we split the randomly participants into two groups, and one-by-one, we have them go through their treatment. At the end, we have data from participants in one condition and data from participants in the other, and we can compare them. This is called **between-subjects** design.
+                *   We can also do a **within-subjects** experiment. With a within-subjects experiment, each participant participates in both treatments. 
+                    *   Within-subjects is beneficial because it allows us to gather twice as much data if our participant pool is limited: here, each interface would be used by 16 participants instead of just 8.
+                    *   It also allows us to do within-subjects comparisons, seeing how each individual participant was affected instead of the groups as a whole. That can help us identify some more subtle effects, like if different people had different strengths.
+                    *   However, within-subjects requires more of our subjects’ time, which can be a big problem if the treatments are each long.
+                *   However, a major lurking variable could potentially be which treatment each participant sees first, so we still have to randomly assign participants to treatment groups. But instead of assigning participants to which treatment they’re receiving, we’re **randomly assigning** them to what order they’ll receive the treatments in. That way, if the order that participants receive the treatments matters, we’ll see it.
+                    *   Throughout this example, we’ve also glossed over an important detail: random assignment. Random assignment to treatments help us control for bias. Imagine if all the smartest participants, or all the women, or all the punctual participants were assigned to the same treatment. That would clearly affect our results.
+                    *   So, we randomly assign people to groups. That might also sound obvious, but imagine if your treatment involved a lot of physical set-up. It would be tempting to run the first eight participants on one set-up, and the second eight on the other. But what if that means the more punctual participants were all in the first condition? Or what if you got better at administering the experiment during the first condition, so that participants in the second condition had a generally smoother experience? All of these are lurking variables that are controlled by random assignment.
+    *   **Hypothesis testing**
+        *   Did results arise by random chance?
+        *   Are results different enough to conclude that they’re really different?
+        *   **Null and alternative hypotheses**
+            *   Null hypothesis: we initially hypothesize that two things are equal.
+            *   The alternative hypothesis is that they are not equal.
+            *   We want to see if the difference is big enough to accept the alternative hypothesis rather than the null hypothesis; we generally do that if there is less than a 5% chance that the difference could have arisen by random chance.
+            *   In that case, we say that the difference is “statistically significant”.
+        *   This is the general process of hypothesis testing: assuming things are the same, and seeing if the data is sufficient to prove they’re different.
+        *   **The specific kind of hypothesis test you conduct depends on the kind of data that you have.**
+            *   For **nominal data**, we generally want to use a **Chi-square test**.
+                *   A Chi-square test checks to see if the distribution of values to a number of buckets is the same across two conditions.
+                *   Here, our independent variable is the conditions, treatments, etc., and our dependent variable is the distribution of values.
+                *   Our null hypothesis is that the distributions are not different, and our alternative is that they are different.
+            *   For **ordinal data**, our process is largely the same (**Chi-square test, Kolmogorov-Smirnov test, median test**)
+                *   Our independent variable are the conditions or treatments, and our dependent variable is the distribution of values across those categories.
+                *   Our null hypothesis is still that there are no differences, and our alternative is that there are differences.
+                *   For that reason, we can use the same Chi-square test on ordinal data that we used on nominal data.
+                *   However, that isn’t the absolute best thing to do: a Chi-square test doesn’t understand that the values are ordered, and so it doesn’t understand that a systematic shift across the categories is probably more notable.
+                *   So, we might instead use a test called the Kolmogorov-Smirnov test, which acts similar to a Chi-square test but with additional knowledge of the order of the categories.
+                *   We might also use a median test, which tests to see whether the medians of the samples are the same.
+                *   It’s also not uncommon to make the assumption that the ordinal data is actually interval data and use the tests specifically developed for interval data; this isn’t a good thing to do because it assumes that the ordinal categories are evenly spaced, but it’s still not uncommon to do so because of the relative ease of the test.
+            *   For **interval and ratio data**, the types of tests we use shift.
+                *   If we’re comparing between only two treatments or conditions, then we’ll use what’s called a **Student’s t-test**.
+                    *   A t-test lets us straightforwardly compare the means of two samples to see if there’s a significant chance that they’re different.
+                    *   Here, our independent variable is whatever is different about the samples, and our dependent variable is the observed values.
+                    *   Our null hypothesis is that the samples aren’t different, and our alternative is that they are.
+                    *   This same test can be used for interval and ratio data because it isn’t dependent on there existing an absolute 0 point.
+                    *   It’s worth noting that we’re only supposed to use t-tests when the data distribution is normal. If it isn’t, we should use things like the Mann-Whitney U test or the Kruskal-Wallis H test… but those topics are out of our scope. Generally, a Chi square test and a t-test will get you most of what you need… at least until we have more than three treatments.
+                *   What if we wanted to test three interfaces at the same time?
+                    *   You might be tempted to just do three t-tests or three Chi-square tests, one on each pair. This is called **repeated testing**, and the problem is that it raises the likelihood that we’ll find something that isn’t actually true, which is called a Type I Error.
+                    *   **Type 1 error**: also known as a false positive - occurs when a researcher incorrectly rejects a true null hypothesis. This means that your report that your findings are significant when in fact they have occurred by chance
+                    *   Remember, we said that we reject a null hypothesis if there’s less than a 5% chance that the data could have been so different due to randomness alone. That means that every time we run an additional test, we’re taking a 1-in-20 chance of finding something that isn’t there. So instead, we need a single test that can evaluate multiple conditions at once.
+                    *   **Chi-square test**
+                        *   For nominal and ordinal data, fortunately a Chi-square test can natively handle more than two conditions: we just have to put those conditions in.
+                        *   The weakness here is that it doesn’t tell us what is different; it merely tells us that there exist differences.
+                        *   So, if the Chi-square test on all the groups shows a difference, it’s acceptable to then follow-up with pairwise Chi-square tests between the conditions to drill into what the difference actually is.
+                    *   For interval and ratio data, however, we need to use a different test altogether: **an Analysis of Variance, or ANOVA**.
+                        *   A one-way ANOVA test lets us compare between three or more groups simultaneously. So, we could test between three or four different interfaces at the same time.
+                        *   We can even do something called a two-way ANOVA, where we look at two independent variables at the same time. We could check three interfaces against two genders to see if performance is a function of both gender and interface selection.
+                        *   So, ANOVA is what we use when we have more than two categories and interval or ratio data.
+                    *   Notice, however, that there’s still one assumption in every test we’ve looked at so far: we’ve always assumed that the independent variable is nominal. What if the independent variable was instead interval or ratio? We might want to look at the relationship between time using an interface and speed completing a certain task to understand the learning curves for different interfaces.
+                        *   We could do this by breaking the interval data into categories, but we could also do this by performing a regression. **Regression analyses** are used when both the independent and dependent variables are interval or ratio data.
+            *   **Binomial data**
+                *   A **binomial test** is used when we have binomial data. Binomial data is data with only two possible outcomes, like a coin flip. For us, we might have outcomes like ‘success’ or ‘failure’. We could be curious which interface allows a user to succeed at a task with greater frequency.
+                *   What can be tricky here is that our data actually looks continuous: we might say “in Treatment 1, users succeed 55.4% of the time, while in Treatment 2, users succeed 46.5% of the time.” That looks continuous.
+                *   Due to some details of how the math works, though, we don’t use standard t-tests with binomial data: instead, we use specific binomial t-tests.
+                *   There are two kinds: with a one-sample binomial t-tests, we test to see if a distribution is different from some arbitrary number. For example, we could test a probability against random chance by testing it against 0.5.
+                *   With a two-sample binomial t-test, we test to see if two distributions are different. So, we could test to see if one interface leads to success more often than the other.
+            *   Even here, we’re only scratching the surface of the tests that are out there. There are also paired tests, repeated measures tests, tests with one tail vs. two tails… but that’s all advanced stuff. 
+    *   **Tips for doing empirical evaluations**
+        *   1. **Control what you can, document what you can’t**. Try to make your treatments as identical as possible. However, if there are systematic differences between them, document and report that.
+        *   2. **Limit your variables**. It can be tempting to try to vary lots of different things and monitor lots of other things, but that just leads to noisy, difficult data that probably will generate some false conclusions. Instead, focus on varying only 1 or 2 things, and monitor only a handful of things in response. There’s nothing at all wrong with only modifying one variable and only monitoring one variable.
+        *   3. **Work backwards in designing your experiment**. A common mistake I’ve seen is to just gather a bunch of data and figure out how to analyze it later. That’s messy and doesn’t lead to very reliable conclusions. Decide at the start what question you want to answer, then decide the analysis to use, then decide the data to gather. 
+        *   4. **Script your analyses in advance**. Ronald Coase once said, “If you torture the data long enough,  nature will always confess.” What the quote means is that if we analyze and reanalyze data long enough, we can always find conclusions, but that doesn’t mean they’re actually there. So, decide in advance what analysis you’ll do, and do it -- if it doesn’t give you the results you want, don’t reanalyze it until it does.
+        *   5. **Pay attention to power**. Power refers to the size of a difference that a test can detect, and generally it’s dependent on how many participants you have. If you want to detect a small effect, then you’ll need a lot of participants. If you only care about detecting a big effect, you can get by with fewer.
+*   **Empirical Tests (IV = Independent Variables, DV = Dependent Variables)**
+*   ![screenshot](/images_Exam2/image7.png)
+*   **Predictive evaluation: **evaluation based on systematic application of pre-established principles and heuristics
+    *   Predictive evaluation is specifically evaluation without users.
+    *   In user-centered design, this is obviously not our favorite kind of evaluation.
+    *   Evaluation with real users, though, is oftentimes slow, so it’s useful for us to have ways we can do some simple evaluation on a day-to-day basis. Predictive evaluation is alright to use as part of a rapid feedback process. It lets us keep the user in mind even if we’re not bringing the user into the conversation.
+    *   Along the way, we might also want to iterate more quickly by predicting what the results of the user evaluation will be.
+    *   The important thing is to make sure we’re using it appropriately: predictive evaluation shouldn’t be used where we could be doing qualitative or empirical evaluation; it should be used where we wouldn’t otherwise be doing any evaluation.
+    *   **Types of predictive evaluation**
+        *   **Heuristic evaluation**: simply to hand our interface and these guidelines to a few experts to evaluate.
+            *   Each individual evaluator inspects the interface alone, and identifies places where the interface violates a heuristic.
+            *   We might sit with the expert while they perform the evaluation, or they might generate a report.
+            *   Heuristics are useful because they give us small snapshots into the way people might think about our interfaces.
+            *   If we take those heuristics to an extreme, though, we could go so far as to develop models of the way people think about our interfaces.
+        *   During our needfinding exercises, we developed a model of our users’ tasks. **Model-based evaluation**: we take that model and trace through it in the context of the task.
+            *   Let’s use a GOMS model as an example.
+            *   Just as we computed a GOMS model for what users did in some context, we can compute a GOMS model for what they will do in our new interface.
+            *   Then, we can compare these models side-by-side to see how our interface changes the task and evaluate whether it aids efficiency.
+            *   We can also use our models of user profiles to evaluate whether the new design meets these criteria.
+            *   If we take model-based evaluation to an extreme, we can actually get to the point of simulation-based evaluation.
+        *   **AI agents**
+            *   At that point, we might construct an artificially intelligent agent that interacts with our interface the way a human would. Ivory and Hearst did some research on such automated evaluation back in 2001.
+            *   More recently, work has been done to create even more human-like models of users, like some work done by a research group at the Human-Centered Design Group at the Institute for Information Technology in Germany.
+            *   Developing that agent is an enormous task on its own, but if we’re working on a big long-term project like Facebook or in a high-stakes environment like air traffic controlling, having a simulation of a human that we can run hundreds of thousands of times on different interface prototypes would be extremely useful.
+        *   **Cognitive walk-through**: most likely the most common type of predictive evaluation you’ll encounter
+            *   In a cognitive walkthrough, we step through the process of interacting with an interface, mentally simulating at each stage what the user is seeing, thinking, and doing.
+            *   At every stage of the process, I want to investigate this from the perspective of the gulfs of execution and evaluation.
+                *   Is it reasonable to expect the user to cross the gulf of execution? Is the right action sufficiently obvious? Is the response to the action the one the user would expect?
+                *   Is it reasonable to expect the feedback to cross the gulf of evaluation? Does the feedback show the user what happened? Does the feedback confirm the user chose the right action?
+            *   The weakness of cognitive walkthroughs is that we’re the designers, so it likely seems to us that the design is fine. After all, we designed it.
+            *   But if you can sufficiently put yourself in the user’s shoes, you can start to uncover some useful takeaways without involving real users.
+*   **Evaluation timeline**
+    *   When we discussed prototyping, we talked about how over time, our prototypes will get higher and higher fidelity. Something similar happens with evaluation: ⇒ **Over time, our evaluation methods will change**. The evaluations we use early on differ from what we likely use later.
+    *   **Purpose: Formative vs summative**
+        *   Throughout most of the design process, our evaluations are **formative**, meaning their primary purpose is to help us redesign and improve our interface.
+        *   At the end, though, we might want to do something more **summative** to conclude the design process, especially if we want to demonstrate that the new interface is better.
+        *   ![screenshot](/images_Exam2/image20.png)
+    *   **Approach: Qualitative vs empirical vs predictive**
+        *   Our early evaluations are likely to be more interpretive, qualitative, and informal. Their goal is to help us improve.
+        *   Our later evaluations are likely to be more empirical, controlled, and formal. Their goal is to demonstrate or assess change.
+        *   ![screenshot](/images_Exam2/image10.png)
+    *   **Data: Qualitative vs quantitative**
+        *   Our early data is likely to be more qualitative, while our later data is likely to be more quantitative.
+        *   ![screenshot](/images_Exam2/image12.png)
+    *   **Setting: Lab testing vs field testing**
+        *   Where the evaluation takes place: in the controlled lab environment or in the field.
+        *   Generally, when we’re testing early interfaces, we probably want to do it in more of a lab setting, not live.
+        *   Later on, we might do real live field testing.
+        *   That lets us focus exclusively on the interface early on, then transition to focusing on the interface in context later.
+        *   ![screenshot](/images_Exam2/image17.png)
+    *   Of course, none of these are hard and fast rules: we’ll likely do some qualitative evaluation later sometimes, or some field testing early, but, in general, this is likely the order we’re likely to follow.
+*   **Steps to ensure your evaluation is useful**
+    *   Regardless of whether we’re doing qualitative, empirical, or predictive evaluation, these steps remain the same. Those different types of evaluation just fill in the experiment we design, and inform the performance measures, data analysis, and conclusions.
+    *   ![screenshot](/images_Exam2/image18.png)
+    *   **1. Define the task you’re examining.**
+        *   Depending on your place in the design process, this could be very large or very small.
+        *   If we were designing Facebook, it could be as simple as posting a status update or as complicated as navigating amongst and using several pages.
+        *   It could involve context and constraints, like taking notes while running or looking up a restaurant address without touching the screen.
+        *   Whatever it is, we want to start by clearly identifying what task we’re going to investigate.
+    *   **2. Define the performance measures.**
+        *   How are we going to evaluate the user’s performance?
+        *   Qualitatively, it could be based on their own spoken or written feedback about the experience.
+        *   Quantitatively, we could measure efficiency in certain activities or count the number of mistakes.
+        *   Defining performance measures helps us avoid confirmation bias: it makes sure we don’t just pick out whatever observations confirm our hypotheses.
+    *   **3. Develop the experiment.**
+        *   How will we find users’ performance on the performance measures?
+        *   If we’re looking qualitatively, will we have them think aloud while using the tool, or will we have them send in a survey after they’re done?
+        *   If we’re looking quantitatively, what will we measure? What will we control, and what will we vary?
+        *   This is also where we ask questions about whether our assessment measures are reliable and valid, and whether the users we are testing are generalizable.
+    *   **4. Recruit participants.**
+        *   As part of the ethics process, we make sure we’re recruiting participants who are aware of their rights and contributing willingly.
+    *   **5. Do the experiment!**
+        *   We have them walk through what we outlined previously.
+    *   **6. Analyze the data.**
+        *   We focus on what the data informs us about our performance measures.
+        *   It’s important that we stay close to what we outlined initially -- it can be tempting to just look for whatever supports our design, but we want to be impartial.
+        *   If we find some evidence that suggests our interface is good in ways we didn’t anticipate, we can always do a follow-up experiment to test if we’re right.
+    *   **7. Summarize the data in a way that informs our ongoing design process.**
+        *   What did our data say was working? What could be improved?
+        *   The results of this experiment then become a part of our design life cycle.
+        *   We investigated users’ needs, developed alternatives, made a prototype, and put the prototype in front of users.
+        *   Based on this experience, we now have the data to develop a better understanding of the users’ needs, to revisit our alternatives, and to improve our prototypes by raising their fidelity for further testing and incorporating the lessons we just learned.
+        *   ![screenshot](/images_Exam2/image5.png)
+**[GOAL #3] Students will understand the type of data that comes out of each type of evaluation, and how it can be used.**
+*   **Reliability**: whether or not some assessment of some phenomenon is consistent (returns the same results for the same phenomenon).
+    *   In an assessment measure, we want it to be reliable across multiple trials. Otherwise its conclusions are random and not very useful
+    *   _If we were to conduct the same procedure again, how likely is it that we’d get the same results?_ That’s reliability.
+*   **Validity**: how accurately an assessment measures reality (if the results actually reflect the underlying phenomenon)
+    *   An assessment could be completely reliable, but completely inaccurate.
+    *   Validity is closely connected to a principle called generalizability.
+    *   _How accurately does our data actually capture the real-world phenomenon we care about?_ That’s validity.
+*   **Generalizability**: the extent to which we can apply lessons we learn in our evaluation to broader audiences of people (if the results can be used to predict phenomena beyond what it measured)
+    *   For example, we might find the kinds of people that volunteer for usability studies have different preferences than the regular user. So, the conclusions we find in those volunteers might not be generalizable in measuring what we want to measure.
+    *   _To what extent can we apply these conclusions to people that weren’t in the evaluation?_ That’s generalizability.
+*   **Precision**: measure of how specific some assessment is (the level of detail a measurement supplies)
+    *   _How specific are our conclusions and observations?_ That’s precision.
+*   **Tips on what you might choose to evaluate**
+    *   In designing evaluations, it’s **critical that we define what we’re evaluating**.
+    *   Without that, we generally tend to bottom out in vague assessments about whether users like our interfaces or not.
+    *   1. **Efficiency**. How long does it take users to accomplish certain tasks? This is one of the classic metrics for evaluating interfaces: can one interface accomplish a task in fewer actions or less time than another? You might test this with predictive models, or you might actually time users in completing these tasks. Still, this paints a narrow picture of usability.
+    *   2. **Accuracy**. How many errors do users commit while accomplishing the task? This is typically a pretty empirical question, although we could address it qualitatively as well. Ideally, we want an interface that reduces the number of errors a user commits while performing a task. Both efficiency and accuracy, however, examine the narrow setting of an expert user using an interface. That brings us to the third metric...
+    *   3. **Learnability**. Sit a new user down in front of the interface. Define some standard for expertise. How long does it take the user to hit that level of expertise? Expertise here might range from performing a particular action to something like creating an entire document.
+    *   4. **Memorability**. Similar to learnability, memorability refers to the user’s ability to remember how to use an interface over time. Imagine you have a user learn an interface, then leave and come back a week later. How much do they remember? Ideally, you want interfaces that need only be learned once, which means high memorability.
+    *   5. **Satisfaction**. When we forget to look for the other metrics, we bottom-out in a general notion of ‘satisfaction’, but that doesn’t mean it’s unimportant. We need to operationalize it, though. Experience is things like users’ enjoyment of the system or the cognitive load they experience while using the system. To avoid social desirability bias, we might want to evaluate this in creative ways, like finding how many participants actually download an app they tested after the session is over.
+    *   Regardless of what you want to evaluate, it’s important that you very clearly articulate at the beginning: what you’re evaluating, what data you’re gathering, and what analysis you will use. These three things should match up to address your research questions.
+
+**[GOAL #4] Students will understand each individual type of evaluation and what conclusions it can generate.**
+*   See the giant outline above
+*   ![screenshot](/images_Exam2/image22.png)
+
+---
 
 
 **EXAM #1 END**
