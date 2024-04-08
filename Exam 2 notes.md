@@ -2,218 +2,6 @@
 
 
 
----
-
-
-**2.6 Mental Models and Representations**
-
-**[GOAL #1] Students will understand the nature of mental models in feedback cycles.**
-
-
-
-*   **Mental model**: An internal, simulatable understanding of external reality
-    *   It’s the understanding you hold in your head about the world around you and how it works. It’s an understanding of the processes, relationships, and connections in real systems.
-    *   Simulating a mental model allows you to make expectations and predictions and figure out how to achieve your goals in the world by matching the outcome to our mental model.
-    *   When reality doesn’t match the mental model, it makes us uncomfortable. When it happens over and over, it can frustrate us. It can make us feel that we just don’t and will never understand.
-    *   As interface designers, this presents us with a lot of challenges.
-        *   We want to make sure that the user’s mental model of our systems matches the way our systems actually work.
-        *   A good interface will give the user a good mental model of the system it presents
-        *   We can do this in two primary ways: by designing systems that act the way people already expect them to act, and by designing systems that by their design teach people how they will act.
-        *   That way, we can minimize the discomfort that comes from systems acting in ways that users don’t expect.
-        *   When you’re designing an interface, you’re playing very much the role of an educator. Your goal is to teach your user how the system works through the design of the interface.
-        *   Most users don’t watch tutorials or read documentation. You have to design interfaces that teach users while they’re using them (make them learnable). That’s where representations will come in. Good representations show the user exactly how the system actually works. It’s an enormous challenge, but also incredibly satisfying when done well.
-*   **Five tips, or principles, to leverage for creating learnable interfaces**:
-    *   These principles of learnability were proposed by Dix, Finlay, Abowd, and Beale in their book Human-Computer Interaction.
-    *   **1. Predictability**. Looking at an action, can the user predict what will happen? For example, graying out a button is a good way to help the user predict that clicking that button will do nothing.
-    *   **2. Synthesizability**. Not only should the user be able to predict the effects of an action before they perform it, they should also be able to see the sequence of actions that led to the current state. This can be difficult in graphical user interfaces, but the log of actions through the undo menu can make it easier. Command lines make this easier, actually, as they give a log of the commands in order.
-    *   **3. Familiarity**. This is similar to Norman’s principles of affordances. The interface should leverage actions with which the user is already familiar from real-world experience. For example, if you’re trying to indicate something is either good or bad, you’d likely want to use red and green rather than blue and yellow.
-    *   **4. Generalizability**. Similar to familiarity and to Norman’s principle of consistency, knowledge of one user interface should be generalize to others. If your interface has tasks that are similar to other interfaces’ tasks, like saving, copying, and pasting, it should perform those tasks in the same way.
-    *   **5. Consistency**. Slightly different than Norman’s principle of consistency, this means that similar tasks or operations within a single interface should behave similarly. For example, you wouldn’t want to have Ctrl+X cut text if text is selected, but close the application if no text is selected. Its behavior should be consistent.
-    *   Using these principles can help the user leverage their existing mental models of other designs, as well as develop a mental model of your interface as quickly as possible.
-
-**[GOAL #2] Students will understand the relationship between representations and strong mental models.**
-
-
-
-*   **Representations**: Internal symbols for an external reality
-    *   In order to develop good mental models, we need to give users good representations of the system with which they’re interacting.
-    *   That way, we can help users learn how to use our interfaces as quickly as possible.
-*   The most powerful tool in our arsenal to help ensure users have effective mental models of our system is representation.
-    *   We get to choose how things are visualized to users, and so we get to choose some of how their mental model develops.
-    *   Using good representations can make all the difference between effective and ineffective mental models.
-
-**[GOAL #3] Students will understand the criteria for a good representation for forming mental models.**
-
-
-
-*   Audio is a poor representation of complex problems. Visual representation is better for complex problems
-*   **Characteristics of good representations**
-    *   First, good representations **make relationships explicit**.
-    *   Second, good representations **bring objects and relationships together**.
-        *   We’re visualizing the objects, but in a way that exposes the relationships among them.
-    *   Third, a good representation **excludes extraneous details**.
-    *   Fourth, good representations **expose natural constraints**.
-*   **Representations in interfaces**
-    *   Representations are all around us in the real world, but they play a huge role in interfaces as well. Designing representations of the system state is actually one of the most common tasks you might perform as an interface designer.
-    *   Representations, when used correctly, can make many tasks trivial or even invisible, and we as interface designers have a lot of control over representations in our designs.
-    *   Example: scrollbar is a representation of your relative position in a document
-*   **Analogies and metaphors**
-    *   Analogies make the interface more learnable, but they also risk restricting the interface to outdated requirements or constraints
-    *   Analogies and metaphors have a downside, thought: when you choose to use them, users don’t know where the analogy ends.
-    *   While analogies are powerful ways to help users understand our interfaces, we also have to pay attention to what misconceptions they might introduce.
-    *   While we need to leverage analogies and prior experiences whenever possible, we also need to be aware that eventually, if we’re doing something interesting or new, analogies are going to break down. Eventually, we’re going to have to teach the user to use the unique elements of our interface.
-*   **Design principles revisited**
-    *   First, the idea that **people reason by analogy** to past interfaces or metaphor to the real world is one of the reasons the principle of consistency is so important. We want to be consistent with the analogies and metaphors that people use to make sense of our interfaces.
-    *   Second, when we say that an interface should teach the user how the system works, we’re echoing the idea of **affordances**. The way the system looks should echo how it’s used. Just by observing the system, the user should be actively learning how to interact with it.
-    *   Third, representations are important because they **map the interface to the task at hand**. A good representation is one that users can use to predict the outcomes of certain actions. In other words, a good representation lets users predict the mapping between their actions in the interface and outcomes in the world.
-
-**[GOAL #4] Students will understand the relationship between learning curves and representations.**
-
-
-
-*   **Learning curve**: plots expertise against experience
-    *   Every interface requires the user to do some learning to understand how to use it. Very often, we visualize these as learning curves.
-    *   Generally, as the user gains more experience, they also gain more expertise.
-    *   The shape and steepness of this curve can vary.
-*   Ideally, we want a learning curve that grows quickly in expertise with little experience (“**rapid**” or “**steep**” learning curve).
-*   **Slow learning curve**
-    *   Interfaces that are more difficult to use would have slower learning curves.
-    *   The user needs a lot more experience to reach the same level of expertise.
-*   **How do we reach proficiency faster?**
-    *   For one, if we’re consistent with existing conventions and use analogies that users understand, we can actually start them off with some initial expertise. 
-    *   From there, we want to make the ascension as rapid as possible. One way we can do that is by using representations and affordances that help the user immediately understand how to use the interface.
-    *   So, good design is about making a user achieve expertise as quickly as possible, either through starting them off higher or lifting them up quicker.
-
-**[GOAL #5] Students will understand the concepts of learned helplessness, expert blindspot, slips, and mistakes.**
-
-
-
-*   As we design interfaces, we will no doubt encounter instances where the user makes mistakes. Sometimes this might be because our users are stressed, busy, or distracted, and other times it might be because our users don’t understand our interfaces or even their own goals.
-*   As designers, though, we know that there’s no such thing as user error: any user error is a failure of the interface to properly guide the user to the right action.
-    *   User error: slips and mistakes
-*   **Slips**: when the user has the right mental model, but does the wrong thing anyway.
-    *   Could be a violation of the consistency principle
-    *   Norman further divides slips into two categories:
-        *   **Action-based slips** are places where the user performs the wrong action, or performs the right action on the wrong object, even though they knew the correct action. They might click the wrong button or right click when they should left click.
-        *   **Memory lapse slips** are places where the user forgets something they knew to do. Forgetting to start a timer or initiate logging might be examples of memory lapse slips.
-*   **Mistakes**: when the user has the wrong mental model, and does the wrong thing as a result
-    *   Could be a violation of the tolerance principle
-    *   Norman divides mistakes into three categories:
-        *   The first is **rule-based**, where the user correctly assesses the state of the world but makes the wrong decision based on it.
-        *   The second is **knowledge-based**, where the user incorrectly assesses the state of the world in the first place.
-        *   The third is **memory lapse**, similar to slips, but this is about failing to fully execute a plan because of distractions or other memory lapses.
-*   We want to help prevent routine errors by leveraging consistent practices. We want to let our interface offload some of the demands on working memory from the user to avoid memory lapse errors. And we want to leverage good representations to help users develop the right mental models to minimize rule-based and knowledge-based errors. And while errors are inevitable, we should make sure to leverage the tolerance principle to make sure their repercussions can never be too bad.
-*   **Learned helplessness**: when the user working with the interface learns that they’re helpless to actually use the system.
-    *   When there is no discernible interaction between the input and the output
-    *   When the user acts in the system over and over and over again, but never receives input that helps them? Never even receives input that makes them think they’re making progress
-*   **Expert blindspot**
-    *   Generally, when we’re developing interfaces, we’re going to be experts in the domain. It’s rare that you design an interface to help people do something you don’t know how to do yourself. But as a result, there’s risk for expert blind spot.
-    *   When you’re an expert in something, there are parts of the task that you do subconsciously, without even thinking about them. And yet if we were suddenly asked to train someone else, there are lots of things we’d forget to say, or lots of things we would think would be obvious. 
-    *   And that’s exactly what you’re doing when you’re designing an interface. You’re teaching the user how to use what you designed. You’re teaching them without the benefit of actually talking to them, explaining things to them, or demonstrating things for them. You’re teaching them through the design of your interface.
-    *   So you have to make sure that you don’t assume they’re an expert, too. You have to overcome that expert blind spot **because we are not our users**.
-
-
-**2.7 Task Analysis**
-
-**[GOAL #1] Students will understand the nature of task analysis in formalizing our understanding of user tasks.**
-
-
-
-*   **Human information processor models** (includes the GOMS model): focuses on the input and output.
-    *   Notice this is similar to the processor model of the user we discuss elsewhere.
-*   **Cognitive task analysis**: a way of trying to get inside the user’s head instead of focusing on input and output
-    *   Notice that this is similar to the predictor model of the user.
-
-**[GOAL #2] Students will understand GOMS and cognitive task analysis as two methods for performing task analysis.**
-
-
-
-*   **GOMS**
-    *   It builds off of the processor model of the human’s role in a system.
-    *   GOMS Model gets its name from the four sets of information it proposes gathering about a task:
-        *   Goals: the user’s goals in the system.
-        *   Operators: the operators the user can perform in the system.
-        *   Methods: the methods for achieving goals in the system.
-        *   Selection rules: the rules for choosing between competing methods.
-        *   ![screenshot](/images_Exam2/image13.png)
-
-*   The GOMS Model thus proposes that every human interacting with a system has a set of goals they want to accomplish.
-    *   To accomplish those goals, they have methods, which are composed of series of operators.
-    *   They also have rules for choosing between multiple methods that would each get them to the goal.
-*   **Strengths and weaknesses of GOMS**
-    *   One weakness is that it does not automatically address a lot of the complexity of problems.
-    *   A second weakness is that the GOMS model assumes the user already has methods in mind (assumes the user is an expert).
-        *   That means the user is already an expert in the area.
-        *   GOMS does not do a good job of accounting for novices or accounting for user errors.
-    *   The strength of GOMS, on the other hand, is its ability to formalize user interaction into steps that we can actually use to make predictions.
-        *   We can measure how long it takes to move between each step, and so we can predict the overall efficiency of using a particular interface. And that can focus our attention on where things can be improved.
-*   **Tips for developing GOMS models**
-    *   1. **Focus on small goals**. We’ve used some pretty big examples, but GOMS was really designed to work in the context of very small goals, like navigating to the end of a document. You can abstract up from there, but start by identifying smaller, moment-to-moment goals.
-    *   2. **Nest goals, not operators**. It’s possible to nest goals. For example, in our GOMS model of navigation, we could develop it further and break the overall task of navigating to a destination down to smaller goals like changing lanes or plotting routes. Operators, however, are the smallest “atom” of a GOMS model. These don’t break down any further, and these must be actions that are performed.
-    *   3. **Differentiate descriptive and prescriptive**. Make sure to identify whether you’re building a model of what people do, or what you want them to do. You can build a GOMS model of what users should do with your interface, but you shouldn’t trick yourself into thinking that’s what they will do.
-    *   4. **Assign costs to operators**. GOMS was designed to let us make predictions about how long certain methods will take. The only way we can do that is if we have some measurement of how long the individual operations take. Usually this is time, but depending on the domain, we might be interested in phrasing the cost differently as well.
-    *   5. **Use GOMS to trim waste**. One of the benefits of GOMS is it helps you visualize where an unnecessary number of operators may be required to accomplish a task. This is bolstered by the costs assigned to them. Use GOMS to identify places where the operators required can be simplified by the interface.
-*   **Variations of GOMS**
-    *   These variations share the commonality of goals, operators, methods, and selection criteria, but they differ in what additional elements they provide.
-    *   Bonnie John and David Kieras cover four popular variations in a paper from 1996:
-        *   They start with the keystroke-level model, the simplest technique.
-            *   Here, the designer simply specifies the operators and execution times for a an action, and sums them to find the complexity of an interaction.
-            *   This method proposed six categories of operators: for modern modeling, we would need some new ones to cover touchscreens and other novel interfaces.
-        *   CMN-GOMS is an extension of GOMS that features submethods and conditions in a strict goal hierarchy.
-        *   Natural GOMS Language, the third, is a natural-language form of GOMS, that lends itself to human interpretation.
-            *   In all these cases, the important point of emphasis is the way these models allow us to focus in on places where we might be asking too much of the user.
-        *   4th type
-            *   For example, in this model, the user was being asked to recall lots of information from memory. By making the assumptions and actions this explicit, this model lets us target where working memory is being overly taxed in a way that we might miss with more high-level designs.
-*   **GOMS to cognitive task analysis //// participant+processor+predictor**
-    *   The GOMS model is a human information processor model: it largely considers the human to be an input/output machine, and it doesn’t get too far into the internal reasoning of the human. Instead, it stills them into things that can be described explicitly, like goals and methods.
-    *   Some would argue, though, that human reasoning is too nuanced and complex to be so simplified. They advocate other models that get more into what goes on inside the user’s head.
-    *   That’s where cognitive task analysis comes in: cognitive task analysis is another way of examining tasks, but it puts a much higher emphasis on things like memory, attention, and cognitive load. Thus, cognitive task analysis adopts more of the predictor view of the human’s role in the system.
-    *   This conflict between more processor-oriented and more predictor-oriented models of the user actually gets at the core of an old battle in psychology between behaviorism and cognitivism.
-        *   **Behaviorism**: an approach to psychology that emphasizes behavior as a product of stimuli and the environment. Behaviorism emphasizes things that can be observed: we can see what input a person is receiving, and we can see the output they are producing, and that may be all we need to understand to design things.
-        *   **Cognitivism**: an approach to psychology that emphasizes internal thought processes. Cognitivism, on the other hand, suggests we can and should get into what people are actually thinking inside their minds, how systems like memory and learning and perception work.
-        *   Joyner prefers methods that focus on cognition.
-        *   Both approaches have significant value, however: The GOMS model and its emphasis on identifying goals and operators is actually very useful in HCI because it forces us to very clearly and deliberately identify user goals and the sequences of actions that accomplish them. We can get so caught up in user experiences that we forget the user experience is born out of the individual operators. So while I wouldn’t advocate focusing solely on the user as an input-output information processor, there is value in defining the user’s operations as clearly and specifically as we define the computer’s.
-*   **Cognitive task analysis**
-    *   Cognitive Task Analysis is not a single method, but rather a general type of method to approach the evaluation of how people complete tasks. Performing a cognitive task analysis involves a number of techniques and methods that we discuss more when discussing the design life cycle.
-    *   For right now, though, we’re interested in what kind of information we’re trying to gather, not how we’re gathering it.
-    *   Cognitive task analyses are especially concerned with understanding the underlying thought process in performing a task. Not just what we can see, but specifically what we can’t see.
-    *   There are a lot of different methods for performing cognitive task analyses, but most methods follow a particular common sequence:
-    *   ![screenshot](/images_Exam2/image1.png)
-        *   1. **Collect preliminary knowledge**: while we as interface designers don’t need to become experts in a field, we need a good bit of familiarity with it. So, we might observe people performing the task.
-        *   2. **Identify knowledge representations**: in other words, what kinds of things does the user need to know to complete their task? Note that we’re not yet concerned with the actual knowledge they have, only the types or structures of the knowledge they have.
-            *   For example, we want to know: does this task involve a series of steps in a certain order? A collection of tasks to check off in any order? A web of knowledge to memorize?
-        *   3. **Apply focused knowledge elicitation methods**: populate those knowledge representations.
-            *   It is in this stage that we start to recognize what the user actually knows.
-            *   During this stage, we identify all the specific actions they take, the knowledge they must have in mind to take those actions, the interruptions that can change their thought process, the equipment involved, and the sensory experience of the user.
-        *   4. **Analyze and Verify Data Acquired**: part of that is just confirming with the people we observed that our understanding is correct.
-            *   Then, we attempt to formalize it into structures that can be compared and summarized across multiple data-gathering methods.
-        *   5. **Format Results for the Intended Application**: finally, we need to take those results and format them in a way that is useful for interface design.
-            *   We want to develop models that show what the user was thinking, feeling, and remembering at any given time and make those relationships explicit.
-    *   **Pros and cons**
-        *   **Strength**: Emphasizes mental processes
-            *   Unlike the GOMS model, cognitive task analysis puts an emphasis on what goes on inside the user’s head. It is thus much better-equipped to understand how experts think and work.
-        *   **Strength**: Formal enough for interface design
-            *   The information it generates are formal enough to be used for interface design, for comparison among alternatives, and more.
-        *   **Weakness**: Time-intensive
-            *   Cognitive task analysis is incredibly time-intensive to perform: it involves talking to multiple experts for extended periods of time, then systematically analyzing their data.
-        *   **Weakness**: May deemphasize context
-            *   And in zooming in on the individual’s own thought processes, it risks deemphasizing details that are out in the world, like the role of physical capabilities or interactions with others.
-        *   **Weakness**: Ill-suited for novices
-            *   But perhaps most importantly, cognitive task analysis, like the GOMS model, is well-suited for expert users, but ill-suited for novices.
-*   **Hierarchical task analysis**
-    *   ![screenshot](/images_Exam2/image11.png)
-    *   Cognitive task analysis advocates building models of human reasoning and decision-making in complex tasks. However, a challenge presented here is that very often, large tasks are actually composed of multiple smaller tasks.
-    *   You generally will find tasks and subtasks whenever you’re looking at the results of cognitive task analyses.
-    *   It’s important to remember the strengths supplied by this hierarchy: abstracting out unnecessary details, modularizing designs or principles, and organizing task analysis.
-    *   When you’re creating real cognitive models, you’ll likely have several levels, several states, and additional annotating information.
-*   **Other task analysis frameworks: **GOMS and cognitive task analysis are just two of many alternatives to approaching trying to understand how users approach tasks.
-    *   ![screenshot](/images_Exam2/image2.png)
-    *   More in line with GOMS, options exist like KLM, MHP, and TLM, the keystroke-level model or touch-level model, which captures even finer-grained actions for estimating performance speed.
-    *   Other extensions to GOMS add subgoals, like CPM-GOMS and NGOMSL.
-    *   Cognitive Perceptual Motor-GOMS focuses on parallel tasks, while NGOMSL focuses on creating a natural language.
-    *   More along the lines of Cognitive Task Analysis, multiple more specific methods exist as well, including: ACTA, CDM, Skill-Based CTA, TKS, and CFM.
-    *   CDM puts a focus on places where critical decisions occur, TKS focuses on the nature of users’ knowledge, and CFM focuses on complexity.
-    *   ACTA and Skill-Based CTA are two ways of gathering the information necessary to do a cognitive task analysis
 
 
 
@@ -716,6 +504,223 @@
         *   In design-based research, designers create interventions based on current understanding of the theory and the problem, and use the success of those interventions to improve our understanding of the theory or the problem.
         *   For example, if we believed a certain intersection had a lot of jaywalkers because the signs had poor visibility, we might interview people at the intersection for their thoughts: or, we could create a solution that assumes we’re correct, and then use it to evaluate whether or not we were correct. If we create a more clearly visible sign and it fixes the problem, then it suggests our initial theory was correct.
         *   In all these approaches, notice iteration still plays a strong role: we never try out just one design and stop. We run through the process, create a design, try it out, and then iterate and improve on it. Interface design is never done: it just gets better and better as time goes on, while also adjusting to new trends and technologies.
+
+---
+
+---
+
+
+**2.6 Mental Models and Representations**
+
+**[GOAL #1] Students will understand the nature of mental models in feedback cycles.**
+
+
+
+*   **Mental model**: An internal, simulatable understanding of external reality
+    *   It’s the understanding you hold in your head about the world around you and how it works. It’s an understanding of the processes, relationships, and connections in real systems.
+    *   Simulating a mental model allows you to make expectations and predictions and figure out how to achieve your goals in the world by matching the outcome to our mental model.
+    *   When reality doesn’t match the mental model, it makes us uncomfortable. When it happens over and over, it can frustrate us. It can make us feel that we just don’t and will never understand.
+    *   As interface designers, this presents us with a lot of challenges.
+        *   We want to make sure that the user’s mental model of our systems matches the way our systems actually work.
+        *   A good interface will give the user a good mental model of the system it presents
+        *   We can do this in two primary ways: by designing systems that act the way people already expect them to act, and by designing systems that by their design teach people how they will act.
+        *   That way, we can minimize the discomfort that comes from systems acting in ways that users don’t expect.
+        *   When you’re designing an interface, you’re playing very much the role of an educator. Your goal is to teach your user how the system works through the design of the interface.
+        *   Most users don’t watch tutorials or read documentation. You have to design interfaces that teach users while they’re using them (make them learnable). That’s where representations will come in. Good representations show the user exactly how the system actually works. It’s an enormous challenge, but also incredibly satisfying when done well.
+*   **Five tips, or principles, to leverage for creating learnable interfaces**:
+    *   These principles of learnability were proposed by Dix, Finlay, Abowd, and Beale in their book Human-Computer Interaction.
+    *   **1. Predictability**. Looking at an action, can the user predict what will happen? For example, graying out a button is a good way to help the user predict that clicking that button will do nothing.
+    *   **2. Synthesizability**. Not only should the user be able to predict the effects of an action before they perform it, they should also be able to see the sequence of actions that led to the current state. This can be difficult in graphical user interfaces, but the log of actions through the undo menu can make it easier. Command lines make this easier, actually, as they give a log of the commands in order.
+    *   **3. Familiarity**. This is similar to Norman’s principles of affordances. The interface should leverage actions with which the user is already familiar from real-world experience. For example, if you’re trying to indicate something is either good or bad, you’d likely want to use red and green rather than blue and yellow.
+    *   **4. Generalizability**. Similar to familiarity and to Norman’s principle of consistency, knowledge of one user interface should be generalize to others. If your interface has tasks that are similar to other interfaces’ tasks, like saving, copying, and pasting, it should perform those tasks in the same way.
+    *   **5. Consistency**. Slightly different than Norman’s principle of consistency, this means that similar tasks or operations within a single interface should behave similarly. For example, you wouldn’t want to have Ctrl+X cut text if text is selected, but close the application if no text is selected. Its behavior should be consistent.
+    *   Using these principles can help the user leverage their existing mental models of other designs, as well as develop a mental model of your interface as quickly as possible.
+
+**[GOAL #2] Students will understand the relationship between representations and strong mental models.**
+
+
+
+*   **Representations**: Internal symbols for an external reality
+    *   In order to develop good mental models, we need to give users good representations of the system with which they’re interacting.
+    *   That way, we can help users learn how to use our interfaces as quickly as possible.
+*   The most powerful tool in our arsenal to help ensure users have effective mental models of our system is representation.
+    *   We get to choose how things are visualized to users, and so we get to choose some of how their mental model develops.
+    *   Using good representations can make all the difference between effective and ineffective mental models.
+
+**[GOAL #3] Students will understand the criteria for a good representation for forming mental models.**
+
+
+
+*   Audio is a poor representation of complex problems. Visual representation is better for complex problems
+*   **Characteristics of good representations**
+    *   First, good representations **make relationships explicit**.
+    *   Second, good representations **bring objects and relationships together**.
+        *   We’re visualizing the objects, but in a way that exposes the relationships among them.
+    *   Third, a good representation **excludes extraneous details**.
+    *   Fourth, good representations **expose natural constraints**.
+*   **Representations in interfaces**
+    *   Representations are all around us in the real world, but they play a huge role in interfaces as well. Designing representations of the system state is actually one of the most common tasks you might perform as an interface designer.
+    *   Representations, when used correctly, can make many tasks trivial or even invisible, and we as interface designers have a lot of control over representations in our designs.
+    *   Example: scrollbar is a representation of your relative position in a document
+*   **Analogies and metaphors**
+    *   Analogies make the interface more learnable, but they also risk restricting the interface to outdated requirements or constraints
+    *   Analogies and metaphors have a downside, thought: when you choose to use them, users don’t know where the analogy ends.
+    *   While analogies are powerful ways to help users understand our interfaces, we also have to pay attention to what misconceptions they might introduce.
+    *   While we need to leverage analogies and prior experiences whenever possible, we also need to be aware that eventually, if we’re doing something interesting or new, analogies are going to break down. Eventually, we’re going to have to teach the user to use the unique elements of our interface.
+*   **Design principles revisited**
+    *   First, the idea that **people reason by analogy** to past interfaces or metaphor to the real world is one of the reasons the principle of consistency is so important. We want to be consistent with the analogies and metaphors that people use to make sense of our interfaces.
+    *   Second, when we say that an interface should teach the user how the system works, we’re echoing the idea of **affordances**. The way the system looks should echo how it’s used. Just by observing the system, the user should be actively learning how to interact with it.
+    *   Third, representations are important because they **map the interface to the task at hand**. A good representation is one that users can use to predict the outcomes of certain actions. In other words, a good representation lets users predict the mapping between their actions in the interface and outcomes in the world.
+
+**[GOAL #4] Students will understand the relationship between learning curves and representations.**
+
+
+
+*   **Learning curve**: plots expertise against experience
+    *   Every interface requires the user to do some learning to understand how to use it. Very often, we visualize these as learning curves.
+    *   Generally, as the user gains more experience, they also gain more expertise.
+    *   The shape and steepness of this curve can vary.
+*   Ideally, we want a learning curve that grows quickly in expertise with little experience (“**rapid**” or “**steep**” learning curve).
+*   **Slow learning curve**
+    *   Interfaces that are more difficult to use would have slower learning curves.
+    *   The user needs a lot more experience to reach the same level of expertise.
+*   **How do we reach proficiency faster?**
+    *   For one, if we’re consistent with existing conventions and use analogies that users understand, we can actually start them off with some initial expertise. 
+    *   From there, we want to make the ascension as rapid as possible. One way we can do that is by using representations and affordances that help the user immediately understand how to use the interface.
+    *   So, good design is about making a user achieve expertise as quickly as possible, either through starting them off higher or lifting them up quicker.
+
+**[GOAL #5] Students will understand the concepts of learned helplessness, expert blindspot, slips, and mistakes.**
+
+
+
+*   As we design interfaces, we will no doubt encounter instances where the user makes mistakes. Sometimes this might be because our users are stressed, busy, or distracted, and other times it might be because our users don’t understand our interfaces or even their own goals.
+*   As designers, though, we know that there’s no such thing as user error: any user error is a failure of the interface to properly guide the user to the right action.
+    *   User error: slips and mistakes
+*   **Slips**: when the user has the right mental model, but does the wrong thing anyway.
+    *   Could be a violation of the consistency principle
+    *   Norman further divides slips into two categories:
+        *   **Action-based slips** are places where the user performs the wrong action, or performs the right action on the wrong object, even though they knew the correct action. They might click the wrong button or right click when they should left click.
+        *   **Memory lapse slips** are places where the user forgets something they knew to do. Forgetting to start a timer or initiate logging might be examples of memory lapse slips.
+*   **Mistakes**: when the user has the wrong mental model, and does the wrong thing as a result
+    *   Could be a violation of the tolerance principle
+    *   Norman divides mistakes into three categories:
+        *   The first is **rule-based**, where the user correctly assesses the state of the world but makes the wrong decision based on it.
+        *   The second is **knowledge-based**, where the user incorrectly assesses the state of the world in the first place.
+        *   The third is **memory lapse**, similar to slips, but this is about failing to fully execute a plan because of distractions or other memory lapses.
+*   We want to help prevent routine errors by leveraging consistent practices. We want to let our interface offload some of the demands on working memory from the user to avoid memory lapse errors. And we want to leverage good representations to help users develop the right mental models to minimize rule-based and knowledge-based errors. And while errors are inevitable, we should make sure to leverage the tolerance principle to make sure their repercussions can never be too bad.
+*   **Learned helplessness**: when the user working with the interface learns that they’re helpless to actually use the system.
+    *   When there is no discernible interaction between the input and the output
+    *   When the user acts in the system over and over and over again, but never receives input that helps them? Never even receives input that makes them think they’re making progress
+*   **Expert blindspot**
+    *   Generally, when we’re developing interfaces, we’re going to be experts in the domain. It’s rare that you design an interface to help people do something you don’t know how to do yourself. But as a result, there’s risk for expert blind spot.
+    *   When you’re an expert in something, there are parts of the task that you do subconsciously, without even thinking about them. And yet if we were suddenly asked to train someone else, there are lots of things we’d forget to say, or lots of things we would think would be obvious. 
+    *   And that’s exactly what you’re doing when you’re designing an interface. You’re teaching the user how to use what you designed. You’re teaching them without the benefit of actually talking to them, explaining things to them, or demonstrating things for them. You’re teaching them through the design of your interface.
+    *   So you have to make sure that you don’t assume they’re an expert, too. You have to overcome that expert blind spot **because we are not our users**.
+
+
+**2.7 Task Analysis**
+
+**[GOAL #1] Students will understand the nature of task analysis in formalizing our understanding of user tasks.**
+
+
+
+*   **Human information processor models** (includes the GOMS model): focuses on the input and output.
+    *   Notice this is similar to the processor model of the user we discuss elsewhere.
+*   **Cognitive task analysis**: a way of trying to get inside the user’s head instead of focusing on input and output
+    *   Notice that this is similar to the predictor model of the user.
+
+**[GOAL #2] Students will understand GOMS and cognitive task analysis as two methods for performing task analysis.**
+
+
+
+*   **GOMS**
+    *   It builds off of the processor model of the human’s role in a system.
+    *   GOMS Model gets its name from the four sets of information it proposes gathering about a task:
+        *   Goals: the user’s goals in the system.
+        *   Operators: the operators the user can perform in the system.
+        *   Methods: the methods for achieving goals in the system.
+        *   Selection rules: the rules for choosing between competing methods.
+        *   ![screenshot](/images_Exam2/image13.png)
+
+*   The GOMS Model thus proposes that every human interacting with a system has a set of goals they want to accomplish.
+    *   To accomplish those goals, they have methods, which are composed of series of operators.
+    *   They also have rules for choosing between multiple methods that would each get them to the goal.
+*   **Strengths and weaknesses of GOMS**
+    *   One weakness is that it does not automatically address a lot of the complexity of problems.
+    *   A second weakness is that the GOMS model assumes the user already has methods in mind (assumes the user is an expert).
+        *   That means the user is already an expert in the area.
+        *   GOMS does not do a good job of accounting for novices or accounting for user errors.
+    *   The strength of GOMS, on the other hand, is its ability to formalize user interaction into steps that we can actually use to make predictions.
+        *   We can measure how long it takes to move between each step, and so we can predict the overall efficiency of using a particular interface. And that can focus our attention on where things can be improved.
+*   **Tips for developing GOMS models**
+    *   1. **Focus on small goals**. We’ve used some pretty big examples, but GOMS was really designed to work in the context of very small goals, like navigating to the end of a document. You can abstract up from there, but start by identifying smaller, moment-to-moment goals.
+    *   2. **Nest goals, not operators**. It’s possible to nest goals. For example, in our GOMS model of navigation, we could develop it further and break the overall task of navigating to a destination down to smaller goals like changing lanes or plotting routes. Operators, however, are the smallest “atom” of a GOMS model. These don’t break down any further, and these must be actions that are performed.
+    *   3. **Differentiate descriptive and prescriptive**. Make sure to identify whether you’re building a model of what people do, or what you want them to do. You can build a GOMS model of what users should do with your interface, but you shouldn’t trick yourself into thinking that’s what they will do.
+    *   4. **Assign costs to operators**. GOMS was designed to let us make predictions about how long certain methods will take. The only way we can do that is if we have some measurement of how long the individual operations take. Usually this is time, but depending on the domain, we might be interested in phrasing the cost differently as well.
+    *   5. **Use GOMS to trim waste**. One of the benefits of GOMS is it helps you visualize where an unnecessary number of operators may be required to accomplish a task. This is bolstered by the costs assigned to them. Use GOMS to identify places where the operators required can be simplified by the interface.
+*   **Variations of GOMS**
+    *   These variations share the commonality of goals, operators, methods, and selection criteria, but they differ in what additional elements they provide.
+    *   Bonnie John and David Kieras cover four popular variations in a paper from 1996:
+        *   They start with the keystroke-level model, the simplest technique.
+            *   Here, the designer simply specifies the operators and execution times for a an action, and sums them to find the complexity of an interaction.
+            *   This method proposed six categories of operators: for modern modeling, we would need some new ones to cover touchscreens and other novel interfaces.
+        *   CMN-GOMS is an extension of GOMS that features submethods and conditions in a strict goal hierarchy.
+        *   Natural GOMS Language, the third, is a natural-language form of GOMS, that lends itself to human interpretation.
+            *   In all these cases, the important point of emphasis is the way these models allow us to focus in on places where we might be asking too much of the user.
+        *   4th type
+            *   For example, in this model, the user was being asked to recall lots of information from memory. By making the assumptions and actions this explicit, this model lets us target where working memory is being overly taxed in a way that we might miss with more high-level designs.
+*   **GOMS to cognitive task analysis //// participant+processor+predictor**
+    *   The GOMS model is a human information processor model: it largely considers the human to be an input/output machine, and it doesn’t get too far into the internal reasoning of the human. Instead, it stills them into things that can be described explicitly, like goals and methods.
+    *   Some would argue, though, that human reasoning is too nuanced and complex to be so simplified. They advocate other models that get more into what goes on inside the user’s head.
+    *   That’s where cognitive task analysis comes in: cognitive task analysis is another way of examining tasks, but it puts a much higher emphasis on things like memory, attention, and cognitive load. Thus, cognitive task analysis adopts more of the predictor view of the human’s role in the system.
+    *   This conflict between more processor-oriented and more predictor-oriented models of the user actually gets at the core of an old battle in psychology between behaviorism and cognitivism.
+        *   **Behaviorism**: an approach to psychology that emphasizes behavior as a product of stimuli and the environment. Behaviorism emphasizes things that can be observed: we can see what input a person is receiving, and we can see the output they are producing, and that may be all we need to understand to design things.
+        *   **Cognitivism**: an approach to psychology that emphasizes internal thought processes. Cognitivism, on the other hand, suggests we can and should get into what people are actually thinking inside their minds, how systems like memory and learning and perception work.
+        *   Joyner prefers methods that focus on cognition.
+        *   Both approaches have significant value, however: The GOMS model and its emphasis on identifying goals and operators is actually very useful in HCI because it forces us to very clearly and deliberately identify user goals and the sequences of actions that accomplish them. We can get so caught up in user experiences that we forget the user experience is born out of the individual operators. So while I wouldn’t advocate focusing solely on the user as an input-output information processor, there is value in defining the user’s operations as clearly and specifically as we define the computer’s.
+*   **Cognitive task analysis**
+    *   Cognitive Task Analysis is not a single method, but rather a general type of method to approach the evaluation of how people complete tasks. Performing a cognitive task analysis involves a number of techniques and methods that we discuss more when discussing the design life cycle.
+    *   For right now, though, we’re interested in what kind of information we’re trying to gather, not how we’re gathering it.
+    *   Cognitive task analyses are especially concerned with understanding the underlying thought process in performing a task. Not just what we can see, but specifically what we can’t see.
+    *   There are a lot of different methods for performing cognitive task analyses, but most methods follow a particular common sequence:
+    *   ![screenshot](/images_Exam2/image1.png)
+        *   1. **Collect preliminary knowledge**: while we as interface designers don’t need to become experts in a field, we need a good bit of familiarity with it. So, we might observe people performing the task.
+        *   2. **Identify knowledge representations**: in other words, what kinds of things does the user need to know to complete their task? Note that we’re not yet concerned with the actual knowledge they have, only the types or structures of the knowledge they have.
+            *   For example, we want to know: does this task involve a series of steps in a certain order? A collection of tasks to check off in any order? A web of knowledge to memorize?
+        *   3. **Apply focused knowledge elicitation methods**: populate those knowledge representations.
+            *   It is in this stage that we start to recognize what the user actually knows.
+            *   During this stage, we identify all the specific actions they take, the knowledge they must have in mind to take those actions, the interruptions that can change their thought process, the equipment involved, and the sensory experience of the user.
+        *   4. **Analyze and Verify Data Acquired**: part of that is just confirming with the people we observed that our understanding is correct.
+            *   Then, we attempt to formalize it into structures that can be compared and summarized across multiple data-gathering methods.
+        *   5. **Format Results for the Intended Application**: finally, we need to take those results and format them in a way that is useful for interface design.
+            *   We want to develop models that show what the user was thinking, feeling, and remembering at any given time and make those relationships explicit.
+    *   **Pros and cons**
+        *   **Strength**: Emphasizes mental processes
+            *   Unlike the GOMS model, cognitive task analysis puts an emphasis on what goes on inside the user’s head. It is thus much better-equipped to understand how experts think and work.
+        *   **Strength**: Formal enough for interface design
+            *   The information it generates are formal enough to be used for interface design, for comparison among alternatives, and more.
+        *   **Weakness**: Time-intensive
+            *   Cognitive task analysis is incredibly time-intensive to perform: it involves talking to multiple experts for extended periods of time, then systematically analyzing their data.
+        *   **Weakness**: May deemphasize context
+            *   And in zooming in on the individual’s own thought processes, it risks deemphasizing details that are out in the world, like the role of physical capabilities or interactions with others.
+        *   **Weakness**: Ill-suited for novices
+            *   But perhaps most importantly, cognitive task analysis, like the GOMS model, is well-suited for expert users, but ill-suited for novices.
+*   **Hierarchical task analysis**
+    *   ![screenshot](/images_Exam2/image11.png)
+    *   Cognitive task analysis advocates building models of human reasoning and decision-making in complex tasks. However, a challenge presented here is that very often, large tasks are actually composed of multiple smaller tasks.
+    *   You generally will find tasks and subtasks whenever you’re looking at the results of cognitive task analyses.
+    *   It’s important to remember the strengths supplied by this hierarchy: abstracting out unnecessary details, modularizing designs or principles, and organizing task analysis.
+    *   When you’re creating real cognitive models, you’ll likely have several levels, several states, and additional annotating information.
+*   **Other task analysis frameworks: **GOMS and cognitive task analysis are just two of many alternatives to approaching trying to understand how users approach tasks.
+    *   ![screenshot](/images_Exam2/image2.png)
+    *   More in line with GOMS, options exist like KLM, MHP, and TLM, the keystroke-level model or touch-level model, which captures even finer-grained actions for estimating performance speed.
+    *   Other extensions to GOMS add subgoals, like CPM-GOMS and NGOMSL.
+    *   Cognitive Perceptual Motor-GOMS focuses on parallel tasks, while NGOMSL focuses on creating a natural language.
+    *   More along the lines of Cognitive Task Analysis, multiple more specific methods exist as well, including: ACTA, CDM, Skill-Based CTA, TKS, and CFM.
+    *   CDM puts a focus on places where critical decisions occur, TKS focuses on the nature of users’ knowledge, and CFM focuses on complexity.
+    *   ACTA and Skill-Based CTA are two ways of gathering the information necessary to do a cognitive task analysis
+    *   
+---
 
 **3.6 Evaluation**
 
